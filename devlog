@@ -9,4 +9,5 @@ THIS IS NOT A CHANGELOG. This log is to record stuff not captured by the code.
 [http://answers.ros.org/question/221550/problem-running-rtabmap_ros-against-a-bag-file/]
 and am now compiling rtabmap_ros from source in order to implement the linked fix.
 - Compiled rtabmap 10.10 seems to *start* like before, now to patch in fix.
+- and issue is fixed! rtabmap_ros no longer crashes upon recieving turtlebot data.
 - Created git repo, initial commit to source control.
