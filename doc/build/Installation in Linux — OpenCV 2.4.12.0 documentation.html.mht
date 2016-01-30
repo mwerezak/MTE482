@@ -1,0 +1,624 @@
+From: <Saved by Mozilla 5.0 (X11)>
+Subject: Installation in Linux =?utf-8?Q?=E2=80=94?= OpenCV 2.4.12.0
+ documentation
+Date: Fri, 29 Jan 2016 20:15:44 -0500
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_3769A0EE.C6A57537"
+X-MAF-Information: Produced By MAF V3.1.2
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_3769A0EE.C6A57537
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html#building-opencv-from-source-using-cmake-using-the-command-line
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml"><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8"><s=
+cript src=3D"urn:snapshot-B50AEB86:http://www.google-analytics.com/ga.js"=
+ async=3D"" type=3D"text/javascript"></script><script type=3D"text/javascri=
+pt"><!--
+/* Script removed by snapshot save */
+--></script>
+
+
+ =20
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+   =20
+    <title>Installation in Linux =E2=80=94 OpenCV 2.4.12.0 documentation</t=
+itle>
+    <link rel=3D"stylesheet" href=3D"urn:snapshot-21D3CE2F:http://docs.open=
+cv.org/2.4/_static/default.css" type=3D"text/css">
+    <link rel=3D"stylesheet" href=3D"urn:snapshot-3A8DB2E5:http://docs.open=
+cv.org/2.4/_static/pygments.css" type=3D"text/css">
+    <script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+    <script type=3D"text/javascript" src=3D"urn:snapshot-FD7DD05D:http://do=
+cs.opencv.org/2.4/_static/jquery.js"></script>
+    <script type=3D"text/javascript" src=3D"urn:snapshot-9B8D335A:http://do=
+cs.opencv.org/2.4/_static/underscore.js"></script>
+    <script type=3D"text/javascript" src=3D"urn:snapshot-FE23583E:http://do=
+cs.opencv.org/2.4/_static/doctools.js"></script>
+    <link rel=3D"top" title=3D"OpenCV 2.4.12.0 documentation" href=3D"http:=
+//docs.opencv.org/2.4/index.html">
+    <link rel=3D"up" title=3D"Introduction to OpenCV" href=3D"http://docs.o=
+pencv.org/2.4/doc/tutorials/introduction/table_of_content_introduction/tabl=
+e_of_content_introduction.html">
+    <link rel=3D"next" title=3D"Using OpenCV with gcc and CMake" href=3D"ht=
+tp://docs.opencv.org/2.4/doc/tutorials/introduction/linux_gcc_cmake/linux_g=
+cc_cmake.html">
+    <link rel=3D"prev" title=3D"Introduction to OpenCV" href=3D"http://docs=
+.opencv.org/2.4/doc/tutorials/introduction/table_of_content_introduction/ta=
+ble_of_content_introduction.html">=20
+  </head>
+  <body>
+    <div class=3D"related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class=3D"right" style=3D"margin-right: 10px">
+          <a href=3D"http://docs.opencv.org/2.4/genindex.html" title=3D"Gen=
+eral Index" accesskey=3D"I">index</a></li>
+        <li class=3D"right">
+          <a href=3D"http://docs.opencv.org/2.4/doc/tutorials/introduction/=
+linux_gcc_cmake/linux_gcc_cmake.html" title=3D"Using OpenCV with gcc and CM=
+ake" accesskey=3D"N">next</a> |</li>
+        <li class=3D"right">
+          <a href=3D"http://docs.opencv.org/2.4/doc/tutorials/introduction/=
+table_of_content_introduction/table_of_content_introduction.html" title=3D"=
+Introduction to OpenCV" accesskey=3D"P">previous</a> |</li>
+        <li><a href=3D"http://docs.opencv.org/2.4/index.html">OpenCV 2.4.12=
+.0 documentation</a> =C2=BB</li>
+          <li><a href=3D"http://docs.opencv.org/2.4/doc/tutorials/tutorials=
+.html">OpenCV Tutorials</a> =C2=BB</li>
+          <li><a href=3D"http://docs.opencv.org/2.4/doc/tutorials/introduct=
+ion/table_of_content_introduction/table_of_content_introduction.html" acces=
+skey=3D"U">Introduction to OpenCV</a> =C2=BB</li>=20
+      </ul>
+    </div> =20
+
+    <div class=3D"document">
+ =20
+      <div class=3D"documentwrapper">
+        <div class=3D"bodywrapper">
+          <div class=3D"body">
+           =20
+  <div class=3D"section" id=3D"installation-in-linux">
+<span id=3D"linux-installation"></span><h1>Installation in Linux<a class=3D=
+"headerlink" href=3D"#installation-in-linux" title=3D"Permalink to this hea=
+dline">=C2=B6</a></h1>
+<p>These steps have been tested for Ubuntu 10.04 but should work with other=
+ distros as well.</p>
+<div class=3D"section" id=3D"required-packages">
+<h2>Required Packages<a class=3D"headerlink" href=3D"#required-packages" ti=
+tle=3D"Permalink to this headline">=C2=B6</a></h2>
+<blockquote>
+<div><ul class=3D"simple">
+<li>GCC 4.4.x or later</li>
+<li>CMake 2.6 or higher</li>
+<li>Git</li>
+<li>GTK+2.x or higher, including headers (libgtk2.0-dev)</li>
+<li>pkg-config</li>
+<li>Python 2.6 or later and Numpy 1.5 or later with developer packages (pyt=
+hon-dev, python-numpy)</li>
+<li>ffmpeg or libav development packages: libavcodec-dev, libavformat-dev,=
+ libswscale-dev</li>
+<li>[optional] libtbb2 libtbb-dev</li>
+<li>[optional] libdc1394 2.x</li>
+<li>[optional] libjpeg-dev, libpng-dev, libtiff-dev, libjasper-dev, libdc13=
+94-22-dev</li>
+</ul>
+</div></blockquote>
+<p>The packages can be installed using a terminal and the following command=
+s or by using Synaptic Manager:</p>
+<blockquote>
+<div><div class=3D"highlight-bash"><div class=3D"highlight"><pre><span clas=
+s=3D"o">[</span>compiler<span class=3D"o">]</span> sudo apt-get install bui=
+ld-essential
+<span class=3D"o">[</span>required<span class=3D"o">]</span> sudo apt-get=
+ install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev=
+ libswscale-dev
+<span class=3D"o">[</span>optional<span class=3D"o">]</span> sudo apt-get=
+ install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev=
+ libtiff-dev libjasper-dev libdc1394-22-dev
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class=3D"section" id=3D"getting-opencv-source-code">
+<h2>Getting OpenCV Source Code<a class=3D"headerlink" href=3D"#getting-open=
+cv-source-code" title=3D"Permalink to this headline">=C2=B6</a></h2>
+<p>You can use the latest stable OpenCV version available in <em>sourceforg=
+e</em> or you can grab the latest snapshot from our <a class=3D"reference=
+ external" href=3D"https://github.com/Itseez/opencv.git">Git repository</a>=
+.</p>
+<div class=3D"section" id=3D"getting-the-latest-stable-opencv-version">
+<h3>Getting the Latest Stable OpenCV Version<a class=3D"headerlink" href=3D=
+"#getting-the-latest-stable-opencv-version" title=3D"Permalink to this head=
+line">=C2=B6</a></h3>
+<ul class=3D"simple">
+<li>Go to our <a class=3D"reference external" href=3D"http://sourceforge.ne=
+t/projects/opencvlibrary">page on Sourceforge</a>;</li>
+<li>Download the source tarball and unpack it.</li>
+</ul>
+</div>
+<div class=3D"section" id=3D"getting-the-cutting-edge-opencv-from-the-git-r=
+epository">
+<h3>Getting the Cutting-edge OpenCV from the Git Repository<a class=3D"head=
+erlink" href=3D"#getting-the-cutting-edge-opencv-from-the-git-repository"=
+ title=3D"Permalink to this headline">=C2=B6</a></h3>
+<p>Launch Git client and clone <a class=3D"reference external" href=3D"http=
+://github.com/itseez/opencv">OpenCV repository</a></p>
+<p>In Linux it can be achieved with the following command in Terminal:</p>
+<div class=3D"highlight-bash"><div class=3D"highlight"><pre><span class=3D"=
+nb">cd</span> ~/&lt;my_working _directory&gt;
+git clone https://github.com/Itseez/opencv.git
+</pre></div>
+</div>
+</div>
+</div>
+<div class=3D"section" id=3D"building-opencv-from-source-using-cmake-using-=
+the-command-line">
+<h2>Building OpenCV from Source Using CMake, Using the Command Line<a class=
+=3D"headerlink" href=3D"#building-opencv-from-source-using-cmake-using-the-=
+command-line" title=3D"Permalink to this headline">=C2=B6</a></h2>
+<ol class=3D"arabic">
+<li><p class=3D"first">Create a temporary directory, which we denote as &lt=
+;cmake_binary_dir&gt;, where you want to put the generated Makefiles, proje=
+ct files as well the object files and output binaries.</p>
+</li>
+<li><p class=3D"first">Enter the &lt;cmake_binary_dir&gt; and type</p>
+<div class=3D"highlight-bash"><div class=3D"highlight"><pre>cmake <span cla=
+ss=3D"o">[</span>&lt;some optional parameters&gt;<span class=3D"o">]</span>=
+ &lt;path to the OpenCV <span class=3D"nb">source </span>directory&gt;
+</pre></div>
+</div>
+<p>For example</p>
+<div class=3D"highlight-bash"><div class=3D"highlight"><pre><span class=3D"=
+nb">cd</span> ~/opencv
+mkdir release
+<span class=3D"nb">cd </span>release
+cmake -D <span class=3D"nv">CMAKE_BUILD_TYPE</span><span class=3D"o">=3D</s=
+pan>RELEASE -D <span class=3D"nv">CMAKE_INSTALL_PREFIX</span><span class=3D=
+"o">=3D</span>/usr/local ..
+</pre></div>
+</div>
+</li>
+<li><p class=3D"first">Enter the created temporary directory (&lt;cmake_bin=
+ary_dir&gt;) and proceed with:</p>
+<div class=3D"highlight-bash"><div class=3D"highlight"><pre>make
+sudo make install
+</pre></div>
+</div>
+</li>
+</ol>
+<div class=3D"admonition note">
+<p class=3D"first admonition-title">Note</p>
+<p class=3D"last">If the size of the created library is a critical issue (l=
+ike in case of an Android build) you can use the <tt class=3D"docutils lite=
+ral"><span class=3D"pre">install/strip</span></tt> command to get the small=
+est size as possible. The <em>stripped</em> version appears to be twice as=
+ small. However, we do not recommend using this unless those extra megabyte=
+s do really matter.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class=3D"feedback">
+              <h2>Help and Feedback</h2>
+              You did not find what you were looking for?
+              <ul>
+                 =20
+                 =20
+                 =20
+                  <li>Ask a question on the <a href=3D"http://answers.openc=
+v.org/">Q&amp;A forum</a>.</li>
+                  <li>If you think something is missing or wrong in the doc=
+umentation,
+                  please file a <a href=3D"http://code.opencv.org/">bug rep=
+ort</a>.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class=3D"sphinxsidebar">
+        <div class=3D"sphinxsidebarwrapper">
+            <p class=3D"logo"><a href=3D"http://docs.opencv.org/2.4/index.h=
+tml">
+              <img class=3D"logo" src=3D"http://docs.opencv.org/2.4/_static=
+/opencv-logo-white.png" alt=3D"Logo">
+            </a></p>
+<div id=3D"searchbox" style=3D"">
+      <form class=3D"search" action=3D"http://docs.opencv.org/2.4/search.ht=
+ml" method=3D"get">
+      <input name=3D"q" size=3D"18" type=3D"text">
+      <input value=3D"Search" type=3D"submit">
+      <input name=3D"check_keywords" value=3D"yes" type=3D"hidden">
+      <input name=3D"area" value=3D"default" type=3D"hidden">
+      <p></p>
+    </form>
+</div>
+<script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+  <h3><a href=3D"http://docs.opencv.org/2.4/index.html">Table Of Contents</=
+a></h3>
+  <ul>
+<li><a class=3D"reference internal" href=3D"#">Installation in Linux</a><ul>
+<li><a class=3D"reference internal" href=3D"#required-packages">Required Pa=
+ckages</a></li>
+<li><a class=3D"reference internal" href=3D"#getting-opencv-source-code">Ge=
+tting OpenCV Source Code</a><ul>
+<li><a class=3D"reference internal" href=3D"#getting-the-latest-stable-open=
+cv-version">Getting the Latest Stable OpenCV Version</a></li>
+<li><a class=3D"reference internal" href=3D"#getting-the-cutting-edge-openc=
+v-from-the-git-repository">Getting the Cutting-edge OpenCV from the Git Rep=
+ository</a></li>
+</ul>
+</li>
+<li><a class=3D"reference internal" href=3D"#building-opencv-from-source-us=
+ing-cmake-using-the-command-line">Building OpenCV from Source Using CMake,=
+ Using the Command Line</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class=3D"topless"><a href=3D"http://docs.opencv.org/2.4/doc/tutorials/=
+introduction/table_of_content_introduction/table_of_content_introduction.ht=
+ml" title=3D"previous chapter">Introduction to OpenCV</a></p>
+  <h4>Next topic</h4>
+  <p class=3D"topless"><a href=3D"http://docs.opencv.org/2.4/doc/tutorials/=
+introduction/linux_gcc_cmake/linux_gcc_cmake.html" title=3D"next chapter">U=
+sing OpenCV with gcc and CMake</a></p>
+  <h3>This Page</h3>
+  <ul class=3D"this-page-menu">
+    <li><a href=3D"http://docs.opencv.org/2.4/_sources/doc/tutorials/introd=
+uction/linux_install/linux_install.txt" rel=3D"nofollow">Show Source</a></l=
+i>
+  </ul>
+        </div>
+      </div>
+      <div class=3D"clearer"></div>
+    </div>
+    <div class=3D"related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class=3D"right" style=3D"margin-right: 10px">
+          <a href=3D"http://docs.opencv.org/2.4/genindex.html" title=3D"Gen=
+eral Index">index</a></li>
+        <li class=3D"right">
+          <a href=3D"http://docs.opencv.org/2.4/doc/tutorials/introduction/=
+linux_gcc_cmake/linux_gcc_cmake.html" title=3D"Using OpenCV with gcc and CM=
+ake">next</a> |</li>
+        <li class=3D"right">
+          <a href=3D"http://docs.opencv.org/2.4/doc/tutorials/introduction/=
+table_of_content_introduction/table_of_content_introduction.html" title=3D"=
+Introduction to OpenCV">previous</a> |</li>
+        <li><a href=3D"http://docs.opencv.org/2.4/index.html">OpenCV 2.4.12=
+.0 documentation</a> =C2=BB</li>
+          <li><a href=3D"http://docs.opencv.org/2.4/doc/tutorials/tutorials=
+.html">OpenCV Tutorials</a> =C2=BB</li>
+          <li><a href=3D"http://docs.opencv.org/2.4/doc/tutorials/introduct=
+ion/table_of_content_introduction/table_of_content_introduction.html">Intro=
+duction to OpenCV</a> =C2=BB</li>=20
+      </ul>
+    </div>
+    <div class=3D"footer">
+        =C2=A9 Copyright 2011-2014, opencv dev team.
+      Last updated on Jan 30, 2016.
+      Created using <a href=3D"http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.
+    </div>
+ =20
+</body></html>
+------=_NextPart_000_0000_3769A0EE.C6A57537
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://docs.opencv.org/2.4/_static/opencv-logo-white.png
+
+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
+RK5CYII=
+------=_NextPart_000_0000_3769A0EE.C6A57537
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-21D3CE2F:http://docs.opencv.org/2.4/_static/default.css
+
+/* Effective stylesheet produced by snapshot save */
+@import url("urn:snapshot-AE7EB943:http://docs.opencv.org/2.4/_static/basic=
+.css");
+body { font-family: sans-serif; font-size: 100%; background-color: rgb(0,=
+ 64, 104); color: rgb(0, 0, 0); margin: 0px; padding: 0px; }
+img.logo { width: 150px; }
+div.document { background-color: rgb(0, 96, 144); }
+div.documentwrapper { float: left; width: 100%; }
+div.bodywrapper { margin: 0px 0px 0px 270px; }
+div.body { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); paddi=
+ng: 0px 20px 30px; }
+div.feedback { background-color: rgb(0, 64, 104); color: rgb(255, 255, 255)=
+; padding: 20px 20px 30px; }
+div.feedback h2 { margin: 10px 0px; }
+div.feedback a { color: rgb(255, 255, 255); font-weight: bold; }
+div.footer { color: rgb(255, 255, 255); width: 100%; padding: 9px 0px; text=
+-align: center; font-size: 75%; }
+div.footer a { color: rgb(255, 255, 255); text-decoration: underline; }
+div.related { background-color: rgb(0, 48, 72); line-height: 30px; color:=
+ rgb(255, 255, 255); }
+div.related a { color: rgb(255, 255, 255); }
+div.sphinxsidebar { word-wrap: break-word; width: 270px; }
+div.sphinxsidebar h3 { font-family: "Trebuchet MS",sans-serif; color: rgb(2=
+55, 255, 255); font-size: 1.4em; font-weight: normal; margin: 0px; padding:=
+ 0px; }
+div.sphinxsidebar h3 a { color: rgb(255, 255, 255); }
+div.sphinxsidebar h4 { font-family: "Trebuchet MS",sans-serif; color: rgb(2=
+55, 255, 255); font-size: 1.3em; font-weight: normal; margin: 5px 0px 0px;=
+ padding: 0px; }
+div.sphinxsidebar p { color: rgb(255, 255, 255); }
+div.sphinxsidebar p.topless { margin: 5px 10px 10px; }
+div.sphinxsidebar ul { margin: 10px 0px 10px 10px; padding: 0px; color: rgb=
+(255, 255, 255); }
+div.sphinxsidebar a { color: rgb(204, 238, 255); }
+div.sphinxsidebar input { border: 1px solid rgb(204, 238, 255); font-family=
+: sans-serif; font-size: 1em; }
+a { color: rgb(0, 144, 217); text-decoration: none; }
+a:hover { text-decoration: underline; }
+div.body p, div.body dd, div.body li { text-align: justify; line-height: 13=
+0%; margin-top: 1em; margin-bottom: 1em; }
+div.toctree-wrapper li, ul.simple li { margin: 0px; }
+div.body h1, div.body h2, div.body h3, div.body h4, div.body h5, div.body=
+ h6 { font-family: "Trebuchet MS",sans-serif; background-color: rgb(242, 24=
+2, 242); font-weight: normal; color: rgb(0, 48, 72); border-bottom: 1px sol=
+id rgb(204, 204, 204); margin: 20px -20px 10px; padding: 3px 0px 3px 10px; }
+div.body h1 { margin-top: 0px; font-size: 200%; }
+div.body h2 { font-size: 160%; }
+div.body h3 { font-size: 140%; }
+a.headerlink { color: rgb(101, 161, 54); font-size: 0.8em; padding: 0px 4px=
+; text-decoration: none; }
+a.headerlink:hover { background-color: rgb(101, 161, 54); color: white; }
+div.body p, div.body dd, div.body li { text-align: justify; line-height: 13=
+0%; }
+div.admonition p.admonition-title + p { display: inline; }
+div.note { background-color: rgb(238, 238, 238); border: 1px solid rgb(204,=
+ 204, 204); }
+p.admonition-title { display: inline; }
+p.admonition-title::after { content: ":"; }
+pre { padding: 5px; background-color: rgb(224, 245, 255); color: rgb(51, 51=
+, 51); line-height: 120%; border-width: 1px medium; border-style: solid non=
+e; border-color: rgb(170, 204, 238) -moz-use-text-color; -moz-border-top-co=
+lors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none=
+; -moz-border-left-colors: none; border-image: none; }
+tt { color: rgb(0, 48, 72); padding: 0px 1px; font-size: 1.2em; }
+.toctableopencv colgroup col:nth-child(2) { width: 100% ! important; }
+div.sphinxsidebar #searchbox input[type=3D"text"] { width: auto; }
+div.sphinxsidebar #searchbox input[type=3D"submit"] { width: auto; }
+
+------=_NextPart_000_0000_3769A0EE.C6A57537
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-AE7EB943:http://docs.opencv.org/2.4/_static/basic.css
+
+/* Effective stylesheet produced by snapshot save */
+div.clearer { clear: both; }
+div.related { width: 100%; font-size: 90%; }
+div.related h3 { display: none; }
+div.related ul { margin: 0px; padding: 0px 0px 0px 10px; list-style: outsid=
+e none none; }
+div.related li { display: inline; }
+div.related li.right { float: right; margin-right: 5px; }
+div.sphinxsidebarwrapper { padding: 10px 5px 0px 10px; }
+div.sphinxsidebar { float: left; width: 230px; margin-left: -100%; font-siz=
+e: 90%; }
+div.sphinxsidebar ul { list-style: outside none none; }
+div.sphinxsidebar ul ul, div.sphinxsidebar ul.want-points { margin-left: 20=
+px; list-style: outside none square; }
+div.sphinxsidebar ul ul { margin-top: 0px; margin-bottom: 0px; }
+div.sphinxsidebar form { margin-top: 10px; }
+div.sphinxsidebar input { border: 1px solid rgb(152, 219, 204); font-family=
+: sans-serif; font-size: 1em; }
+div.sphinxsidebar #searchbox input[type=3D"text"] { width: 170px; }
+div.sphinxsidebar #searchbox input[type=3D"submit"] { width: 30px; }
+img { border: 0px none; max-width: 100%; }
+a.headerlink { visibility: hidden; }
+h1:hover > a.headerlink, h2:hover > a.headerlink, h3:hover > a.headerlink,=
+ h4:hover > a.headerlink, h5:hover > a.headerlink, h6:hover > a.headerlink,=
+ dt:hover > a.headerlink { visibility: visible; }
+.first { margin-top: 0px ! important; }
+div.admonition { margin-top: 10px; margin-bottom: 10px; padding: 7px; }
+p.admonition-title { margin: 0px 10px 5px 0px; font-weight: bold; }
+ol.arabic { list-style: outside none decimal; }
+pre { overflow-x: auto; overflow-y: hidden; }
+@media print {
+  div.document, div.documentwrapper, div.bodywrapper { margin: 0px ! import=
+ant; width: 100%; }
+  div.sphinxsidebar, div.related, div.footer, #top-link { display: none; }
+}
+
+------=_NextPart_000_0000_3769A0EE.C6A57537
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-3A8DB2E5:http://docs.opencv.org/2.4/_static/pygments.css
+
+/* Effective stylesheet produced by snapshot save */
+.highlight { background: rgb(238, 255, 204) none repeat scroll 0% 0%; }
+.highlight .o { color: rgb(102, 102, 102); }
+.highlight .nb { color: rgb(0, 112, 32); }
+.highlight .nv { color: rgb(187, 96, 213); }
+
+------=_NextPart_000_0000_3769A0EE.C6A57537
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-B50AEB86:http://www.google-analytics.com/ga.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_3769A0EE.C6A57537
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-FD7DD05D:http://docs.opencv.org/2.4/_static/jquery.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_3769A0EE.C6A57537
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-9B8D335A:http://docs.opencv.org/2.4/_static/underscore.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_3769A0EE.C6A57537
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-FE23583E:http://docs.opencv.org/2.4/_static/doctools.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_3769A0EE.C6A57537--
