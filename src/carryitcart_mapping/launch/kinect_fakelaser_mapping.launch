@@ -24,6 +24,7 @@
 			<param name="Rtabmap/DetectionRate" type="string" value="0.5"/>
 			<param name="Rtabmap/ImageBufferSize" type="string" value="0"/>
 
+			<param name="RGBD/OptimizeStrategy" type="string" value="1"/>
 			<param name="RGBD/OptimizeFromGraphEnd" type="string" value="true"/>
 			<param name="RGBD/OptimizeSlam2D" type="string" value="true"/>
 			<param name="RGBD/LocalLoopDetectionSpace" type="string" value="true"/>
@@ -44,6 +45,8 @@
 			<param name="LccBow/Force2D" type="string" value="true"/>
 
 			<param name="Kp/MaxDepth" type="string" value="4.0"/>
+			<param name="Kp/DetectorStrategy" type="string" value="0"/>
+			<!--<param name="LccReextract/FeatureType" type="string" value="0"/>-->
 			<!--
 			<param name="LccIcp2/CorrespondenceRatio" type="string" value="0.5"/>
 			-->

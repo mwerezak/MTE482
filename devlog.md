@@ -13,3 +13,4 @@ THIS IS NOT A CHANGELOG. This log is to record stuff not captured by the code.
 ### 29/1/2016
 - Apparently in order to find libg2o, the rtabmap core library needs to be recompiled with specific flags.
 - Also compiled cvsba for rtabmap's use while I was at it.
+- Compiled OpenCV 2.4.11 with the nonfree module included to get access to SURF and SIFT, rebuilt rtabmap core library to link to it.
