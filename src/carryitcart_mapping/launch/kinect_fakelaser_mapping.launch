@@ -4,6 +4,7 @@
 	<group ns="rtabmap">
 		<!-- SLAM -->
 		<node name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="screen" args="--delete_db_on_start">
+			<!--<param name="config_path" type="string" value="$(find carryitcart_mapping)/config/icp3d_reextract_relaxed_no_local_lcc.ini"/>-->
 			<param name="frame_id" type="string" value="base_footprint"/>
 			<remap from="odom" to="/odom"/>
 
@@ -18,45 +19,39 @@
 			<param name="subscribe_laserScan" type="bool" value="true"/>
 			<remap from="scan" to="/scan"/>
 
-			<param name="queue_size" type="int" value="10"/>
+			<param name="queue_size" type="int" value="100"/>
 
 			<!-- RTAB-Map's parameters -->
-			<param name="Rtabmap/DetectionRate" type="string" value="0.5"/>
+			<param name="Rtabmap/DetectionRate" type="string" value="1.0"/>
 			<param name="Rtabmap/ImageBufferSize" type="string" value="0"/>
 
-			<param name="RGBD/OptimizeStrategy" type="string" value="1"/>
-			<param name="RGBD/OptimizeFromGraphEnd" type="string" value="true"/>
-			<param name="RGBD/OptimizeSlam2D" type="string" value="true"/>
-			<param name="RGBD/LocalLoopDetectionSpace" type="string" value="true"/>
+			<param name="Mem/STMSize" type="string" value="20"/>
+			<param name="RGBD/LocalImmunizationRatio" type="string" value="0.5"/>
 
-			<param name="Odom/Force2D" type="string" value="true"/>
-			<param name="Odom/Holonomic" type="string" value="false"/>
-			<!--
-			<param name="Odom/ImageBufferSize" type="string" value="512"/>
-			-->
-			<!--<param name="Odom/ParticleNoiseR" type="string" value="0.017"/>-->
-
-			<param name="LccBow/Iterations" type="string" value="1000"/>
-			<param name="LccBow/MinInliers" type="string" value="7"/>
-			<param name="LccBow/InlierDistance" type="string" value="0.05"/>
-			<param name="LccIcp/Type" type="string" value="1"/>
-			<param name="LccIcp3/Iterations" type="string" value="50"/>
-			<param name="LccIcp3/MaxDepth" type="string" value="4.0"/>
-			<param name="LccBow/Force2D" type="string" value="true"/>
-
-			<param name="Kp/MaxDepth" type="string" value="4.0"/>
 			<param name="Kp/DetectorStrategy" type="string" value="0"/>
-			<!--<param name="LccReextract/FeatureType" type="string" value="0"/>-->
-			<!--
-			<param name="LccIcp2/CorrespondenceRatio" type="string" value="0.5"/>
-			-->
-			
-			<!--<param name="RGBD/LocalImmunizationRatio" type="string" value="0.35"/>-->
+			<param name="Kp/MaxDepth" type="string" value="4.0"/>
+
+			<param name="RGBD/OptimizeStrategy" type="string" value="1"/>
+			<param name="RGBD/OptimizeSlam2D" type="string" value="true"/>
+			<param name="RGBD/LocalLoopDetectionSpace" type="string" value="false"/>
+
+			<param name="LccBow/MinInliers" type="string" value="7"/>
+			<param name="LccBow/Iterations" type="string" value="1000"/>
+			<param name="LccBow/Force2D" type="string" value="true"/>
+			<param name="LccIcp/Type" type="string" value="2"/>
+			<param name="LccReextract/Activated" type="string" value="true"/>
+			<param name="LccReextract/FeatureType" type="string" value="4"/>
+			<param name="LccReextract/MaxDepth" type="string" value="4.0"/>
+			<param name="LccReextract/NNType" type="string" value="3"/>
+			<param name="LccIcp2/CorrespondenceRatio" type="string" value="0.2"/>
+			<param name="LccIcp2/Iterations" type="string" value="150"/>
+
+			<param name="Odom/Force2d" type="string" value="true"/>
+			<param name="Odom/Holonomic" type="string" value="false"/>
 
 			<param name="RGBD/AngularUpdate" type="string" value="0.01"/>
 			<param name="RGBD/LinearUpdate" type="string" value="0.01"/>
 			<param name="Rtabmap/TimeThr" type="string" value="700"/>
-			<param name="Mem/RehearsalSimilarity" type="string" value="0.45"/>
 		</node>
 
 		<node pkg="rtabmap_ros" type="rtabmapviz" name="rtabmapviz" output="screen">
