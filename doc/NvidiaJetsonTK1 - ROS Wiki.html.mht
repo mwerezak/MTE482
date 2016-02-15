@@ -1,0 +1,1984 @@
+From: <Saved by Mozilla 5.0 (X11)>
+Subject: NvidiaJetsonTK1 - ROS Wiki
+Date: Thu, 11 Feb 2016 13:39:46 -0500
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_81622C8A.A32A4D99"
+X-MAF-Information: Produced By MAF V3.1.2
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wiki.ros.org/NvidiaJetsonTK1
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd"><html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8">
+
+<meta name=3D"google-site-verification" content=3D"CjkdY6BqKWAVmQ78_iSq6J7Z=
+Z9AoL7-CjFVBYGg9FU4">
+<link rel=3D"shortcut icon" href=3D"http://wiki.ros.org/custom/favicon.ico"=
+ type=3D"image/ico">
+<link rel=3D"stylesheet" href=3D"urn:snapshot-9C089D6C:http://netdna.bootst=
+rapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<script src=3D"urn:snapshot-5FD33B19:http://www.google-analytics.com/ga.js"=
+ async=3D"" type=3D"text/javascript"></script><script src=3D"urn:snapshot-D=
+B683CF5:http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src=3D"urn:snapshot-1C34EEFD:http://netdna.bootstrapcdn.com/bootstr=
+ap/3.1.1/js/bootstrap.min.js"></script>
+<script type=3D"text/javascript" src=3D"urn:snapshot-A993DE98:http://wiki.r=
+os.org/custom/js/sorttable.js"></script>
+<script type=3D"text/javascript" src=3D"urn:snapshot-B8A8934C:http://wiki.r=
+os.org/custom/libraries/jquery.min.js"></script>                        =20
+<script type=3D"text/javascript" src=3D"urn:snapshot-2CE33EFA:http://wiki.r=
+os.org/custom/js/seesaw.js"></script>=20
+<script type=3D"text/javascript" src=3D"urn:snapshot-66D8AD73:http://wiki.r=
+os.org/custom/js/rosversion.js"></script>=20
+<!--script type=3D"text/javascript" src=3D"/custom/libraries/RGraph.common.=
+core.js" ></script Used for metrics only, should be conditional, not at the=
+ top-->
+<!--script type=3D"text/javascript" src=3D"/custom/libraries/RGraph.bar.js"=
+ ></script same as above -->
+
+<script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<meta name=3D"robots" content=3D"index,nofollow">
+
+<title>NvidiaJetsonTK1 - ROS Wiki</title>
+<script type=3D"text/javascript" src=3D"urn:snapshot-D58A3B3F:http://wiki.r=
+os.org/moin_static197/common/js/common.js"></script>
+
+<script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+
+
+<link rel=3D"stylesheet" type=3D"text/css" charset=3D"utf-8" media=3D"all"=
+ href=3D"urn:snapshot-31199DF2:http://wiki.ros.org/moin_static197/rostheme/=
+css/common.css">
+<link rel=3D"stylesheet" type=3D"text/css" charset=3D"utf-8" media=3D"scree=
+n" href=3D"urn:snapshot-607721C2:http://wiki.ros.org/moin_static197/rosthem=
+e/css/screen.css">
+<link rel=3D"stylesheet" type=3D"text/css" charset=3D"utf-8" media=3D"print=
+" href=3D"urn:snapshot-C528BA7B:http://wiki.ros.org/moin_static197/rostheme=
+/css/print.css">
+<link rel=3D"stylesheet" type=3D"text/css" charset=3D"utf-8" media=3D"proje=
+ction" href=3D"urn:snapshot-F57EB58E:http://wiki.ros.org/moin_static197/ros=
+theme/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel=3D"stylesheet" type=3D"text/css" charset=3D"utf-8" media=3D"al=
+l" href=3D"/moin_static197/rostheme/css/msie.css">
+<![endif]-->
+
+
+
+
+<link rel=3D"canonical" href=3D"#">
+
+<link rel=3D"Start" href=3D"http://wiki.ros.org/Documentation">
+<link rel=3D"Alternate" title=3D"Wiki Markup" href=3D"http://wiki.ros.org/N=
+vidiaJetsonTK1?action=3Draw">
+<link rel=3D"Alternate" media=3D"print" title=3D"Print View" href=3D"http:/=
+/wiki.ros.org/NvidiaJetsonTK1?action=3Dprint">
+<link rel=3D"Search" href=3D"http://wiki.ros.org/FindPage">
+<link rel=3D"Index" href=3D"http://wiki.ros.org/TitleIndex">
+<link rel=3D"Glossary" href=3D"http://wiki.ros.org/WordIndex">
+<link rel=3D"Help" href=3D"http://wiki.ros.org/HelpOnFormatting">
+<style type=3D"text/css"><!--
+/* Effective stylesheet produced by snapshot save */
+--></style></head>
+
+<body dir=3D"ltr" lang=3D"en">
+
+<script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script><script src=3D"urn:snapshot-7DB1D0C1:http://www.google-analytic=
+s.com/ga.js" type=3D"text/javascript"></script>
+<script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+
+<script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+
+<div id=3D"dpage">
+  <div id=3D"dpage-inner">
+    <div id=3D"header"><div id=3D"topnav">
+
+<!-- Alert box -->
+<!-- To enable the alert box uncomment the block below. Change the getItem=
+ and setItem calls to a new name. Then update the content below the button.=
+ -->
+<!-- Disabling alert box
+    <div class=3D"alert alert-info alert-dismissable" style=3D"text-align:=
+ center;">
+<script>
+jQuery(function( $ ){
+    state =3D localStorage.getItem('roswiki_osrf2014');
+    if (!state) {
+      localStorage.setItem('roswiki_roscon2015cfp', 'open');
+    }
+    state =3D localStorage.getItem('roswiki_roscon2015cfp');
+    if (state =3D=3D 'closed') {
+        $( '#topnav .alert' ).hide();
+    }
+    $( '.close' ).click(function () {
+	console.log('in .close.click');
+        localStorage.setItem('roswiki_osrf2014', 'closed');
+        $( '#topnav .alert' ).hide();
+  });
+});
+</script>
+      <button type=3D"button" class=3D"close" data-dismiss=3D"alert" aria-h=
+idden=3D"true">&times;</button>
+      The <a href=3D"http://roscon.ros.org/2015/#call-for-proposals">ROSCon=
+ 2015 CFP</a> is open until July 7th. Submit your proposal <a href=3D"http:=
+//roscon.ros.org/review">here</a>.
+    </div>
+End disabling alert box -->
+<!-- End Alert box -->
+
+      <table id=3D"topnav-table">
+        <tbody><tr>
+          <td valign=3D"top" width=3D"300"><a href=3D"http://wiki.ros.org/"=
+><img src=3D"http://wiki.ros.org/custom/images/ros_org.png" alt=3D"ros.org"=
+ border=3D"0" width=3D"238" height=3D"51"></a></td>
+          <td valign=3D"middle">
+            <a href=3D"http://www.ros.org/about-ros">About</a>
+            |
+            <a href=3D"http://wiki.ros.org/Support">Support</a>
+            |
+            <a href=3D"http://status.ros.org/">Status</a>
+            |
+            <a href=3D"http://answers.ros.org/">answers.ros.org</a>
+
+<!--a href=3D"http://roscon.ros.org/2015/"><img align=3D"middle" style=3D"p=
+adding-left: 15px;" src=3D"http://ros.org/images/roscon_wiki_header.jpg" wi=
+dth=3D"133" height=3D"38" alt=3D"ROSCon 2015" /></a-->=20
+
+<!-- <a href=3D"https://events.osrfoundation.org/ros-kong-2014/"><img align=
+=3D"middle" style=3D"padding-left: 15px;" src=3D"http://ros.org/images/ros_=
+kong_2014_badge.png" width=3D"133" height=3D"38" alt=3D"roskong" /></a>
+-->
+<!--a href=3D"https://events.osrfoundation.org/ros-kong-2014/"><img align=
+=3D"middle" style=3D"padding-left: 15px;" src=3D"http://imgur.com/eMzUJVe.p=
+ng" width=3D"133" height=3D"38" alt=3D"roskong" /></a-->
+          </td>
+
+          <td valign=3D"middle" align=3D"right">
+
+<script language=3D"Javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+
+
+<form action=3D"http://www.ros.org/search/index.html" id=3D"cse">
+  <div>
+    <label>Search:</label>
+    <input name=3D"cx" value=3D"018259903093183594226:txvzw9fat6w" type=3D"=
+hidden">
+    <input name=3D"cof" value=3D"FORID:11;NB:1" type=3D"hidden">
+    <input name=3D"filter" value=3D"0" type=3D"hidden">
+    <input name=3D"num" value=3D"10" type=3D"hidden">
+
+    <input name=3D"ie" value=3D"UTF-8" type=3D"hidden">
+    <input name=3D"input" id=3D"input" autocomplete=3D"on" style=3D"width:=
+ 35%" type=3D"text">
+    <input name=3D"q" value=3D"" type=3D"hidden">
+    <input name=3D"sa" value=3D"Submit" onclick=3D"" type=3D"submit">
+
+  </div>
+</form>
+
+         </td>
+      </tr>
+      <tr>
+        <td colspan=3D"3" width=3D"1024" height=3D"53"><nobr><img src=3D"ht=
+tp://wiki.ros.org/custom/images/menu_left.png" alt=3D"" width=3D"17" height=
+=3D"53"><a href=3D"http://wiki.ros.org/"><img src=3D"http://wiki.ros.org/cu=
+stom/images/menu_documentation.png" alt=3D"Documentation" border=3D"0" widt=
+h=3D"237" height=3D"53"></a><img src=3D"http://wiki.ros.org/custom/images/m=
+enu_spacer.png" width=3D"69" height=3D"53"><a href=3D"http://www.ros.org/br=
+owse/"><img src=3D"http://wiki.ros.org/custom/images/menu_browse_software.p=
+ng" alt=3D"Browse Software" border=3D"0" width=3D"268" height=3D"53"></a><i=
+mg src=3D"http://wiki.ros.org/custom/images/menu_spacer.png" width=3D"69"=
+ height=3D"53"><a href=3D"http://www.ros.org/news"><img src=3D"http://wiki.=
+ros.org/custom/images/menu_news.png" alt=3D"News" border=3D"0" width=3D"84"=
+ height=3D"53"></a><img src=3D"http://wiki.ros.org/custom/images/menu_space=
+r.png" width=3D"69" height=3D"53"><a href=3D"http://wiki.ros.org/ROS/Instal=
+lation"><img src=3D"http://wiki.ros.org/custom/images/menu_download.png" al=
+t=3D"Download" border=3D"0" width=3D"151" height=3D"53"></a><img src=3D"htt=
+p://wiki.ros.org/custom/images/menu_right.png" width=3D"60" height=3D"53"><=
+/nobr></td>
+
+      </tr>
+    </tbody></table> <!-- topnav-table -->
+
+    </div> <!-- /#topav -->
+  </div> <!-- /#header -->
+
+
+<div id=3D"header2">
+
+<ul id=3D"pagelocation">
+<li><a class=3D"backlink" href=3D"http://wiki.ros.org/action/fullsearch/Nvi=
+diaJetsonTK1?action=3Dfullsearch&amp;context=3D180&amp;value=3Dlinkto%3A%22=
+NvidiaJetsonTK1%22" rel=3D"nofollow" title=3D"Click to do a full-text searc=
+h for this title">NvidiaJetsonTK1</a></li>
+</ul>
+
+<div id=3D"locationline">
+</div>
+</div>
+
+<div id=3D"sidebar">
+<div class=3D"sidepanel">
+<h1>Wiki</h1>
+
+<ul id=3D"navibar">
+<li class=3D"wikilink"><a href=3D"http://wiki.ros.org/Distributions">Distri=
+butions</a></li><li class=3D"wikilink"><a href=3D"http://wiki.ros.org/ROS/I=
+nstallation">ROS/Installation</a></li><li class=3D"wikilink"><a href=3D"htt=
+p://wiki.ros.org/ROS/Tutorials">ROS/Tutorials</a></li><li class=3D"wikilink=
+"><a href=3D"http://wiki.ros.org/RecentChanges">RecentChanges</a></li><li=
+ class=3D"current"><a href=3D"#">NvidiaJetsonTK1</a></li>
+</ul>
+
+</div>
+<div class=3D"sidepanel">
+<h1>Page</h1>
+<ul class=3D"editbar"><li><span class=3D"disabled">Immutable Page</span></l=
+i><li class=3D"toggleCommentsButton" style=3D"display:none;"><a href=3D"#"=
+ class=3D"nbcomment" onclick=3D"">Comments</a></li><li><a class=3D"nbinfo"=
+ href=3D"http://wiki.ros.org/action/info/NvidiaJetsonTK1?action=3Dinfo" rel=
+=3D"nofollow">Info</a></li><li><a class=3D"nbattachments" href=3D"http://wi=
+ki.ros.org/action/AttachFile/NvidiaJetsonTK1?action=3DAttachFile" rel=3D"no=
+follow">Attachments</a></li><li>
+<form class=3D"actionsmenu" method=3D"GET" action=3D"#">
+<div>
+   =20
+    <select name=3D"action" onchange=3D"">
+        <option selected=3D"selected" value=3D"show">More Actions:</option>=
+<option value=3D"raw">Raw Text</option>
+<option value=3D"print">Print View</option>
+<option value=3D"RenderAsDocbook">Render as Docbook</option>
+<option value=3D"show" disabled=3D"disabled" class=3D"disabled">Delete Cach=
+e</option>
+<option value=3D"show" disabled=3D"disabled" class=3D"disabled">-----------=
+-------------</option>
+<option value=3D"SpellCheck">Check Spelling</option>
+<option value=3D"LikePages">Like Pages</option>
+<option value=3D"LocalSiteMap">Local Site Map</option>
+<option value=3D"show" disabled=3D"disabled" class=3D"disabled">-----------=
+-------------</option>
+<option value=3D"RenamePage" disabled=3D"disabled" class=3D"disabled">Renam=
+e Page</option>
+<option value=3D"CopyPage">Copy Page</option>
+<option value=3D"DeletePage" disabled=3D"disabled" class=3D"disabled">Delet=
+e Page</option>
+<option value=3D"show" disabled=3D"disabled" class=3D"disabled">-----------=
+-------------</option>
+<option value=3D"MyPages">My Pages</option>
+<option value=3D"show" disabled=3D"disabled" class=3D"disabled">Subscribe=
+ User</option>
+<option value=3D"show" disabled=3D"disabled" class=3D"disabled">-----------=
+-------------</option>
+<option value=3D"show" disabled=3D"disabled" class=3D"disabled">Remove Spam=
+</option>
+<option value=3D"show" disabled=3D"disabled" class=3D"disabled">Revert to=
+ this revision</option>
+<option value=3D"PackagePages">Package Pages</option>
+<option value=3D"SyncPages">Sync Pages</option>
+<option value=3D"show" disabled=3D"disabled" class=3D"disabled">-----------=
+-------------</option>
+<option value=3D"CreatePdfDocument">CreatePdfDocument</option>
+<option value=3D"Load">Load</option>
+<option value=3D"RawFile">RawFile</option>
+<option value=3D"Save">Save</option>
+<option value=3D"SlideShow">SlideShow</option>
+    </select>
+   =20
+   =20
+</div>
+<script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+</form>
+</li></ul>
+
+</div>
+<div class=3D"sidepanel">
+<h1>User</h1>
+<ul id=3D"username"><li><a href=3D"http://wiki.ros.org/action/login/NvidiaJ=
+etsonTK1?action=3Dlogin" id=3D"login" rel=3D"nofollow">Login</a></li></ul>
+</div>
+</div>
+
+<div id=3D"page" dir=3D"ltr" lang=3D"en">
+
+<div dir=3D"ltr" id=3D"content" lang=3D"en"><span class=3D"anchor" id=3D"to=
+p"></span>
+<span class=3D"anchor" id=3D"line-1"></span><p class=3D"line867"><span clas=
+s=3D"anchor" id=3D"line-2"></span><span class=3D"anchor" id=3D"line-3"></sp=
+an></p><div class=3D"red solid"><span class=3D"anchor" id=3D"line-1-1"></sp=
+an><p class=3D"line867"><img alt=3D"/!\" src=3D"http://wiki.ros.org/moin_st=
+atic197/rostheme/img/alert.png" title=3D"/!\" width=3D"15" height=3D"15">=
+ When asking questions or looking for help running ROS on the TK1, use the=
+ <a class=3D"http" href=3D"http://answers.ros.org/questions/scope:all/sort:=
+activity-desc/tags:jetson_tk1/page:1/">jetson_tk1 tag on ROS answers</a> </=
+p></div><span class=3D"anchor" id=3D"line-4"></span><span class=3D"anchor"=
+ id=3D"line-5"></span><p class=3D"line867">
+</p><h2 id=3D"Nvidia_Jetson_TK1">Nvidia Jetson TK1</h2>
+<span class=3D"anchor" id=3D"line-6"></span><p class=3D"line862">Jetson TK1=
+ comes pre-installed with Linux4Tegra OS (basically Ubuntu 14.04 with pre-c=
+onfigured drivers). There is also some official support for running other=
+ distributions using the mainline kernel. <span class=3D"anchor" id=3D"line=
+-7"></span><span class=3D"anchor" id=3D"line-8"></span></p><div><table styl=
+e=3D"width: 600px"><tbody><tr>  <td colspan=3D"3" style=3D"text-align:cente=
+r"><p class=3D"line891"><strong>Jetson Specs</strong> </p></td>
+</tr>
+<tr>  <td><span class=3D"anchor" id=3D"line-9"></span><p class=3D"line862">=
+ </p></td>
+  <td><p class=3D"line891"><strong>Nvidia Jetson TK1</strong> </p></td>
+</tr>
+<tr>  <td><span class=3D"anchor" id=3D"line-10"></span><p class=3D"line891"=
+><strong>Processor</strong> </p></td>
+  <td><p class=3D"line862">2.32GHz ARM quad-core Cortex-A15 </p></td>
+</tr>
+<tr>  <td><span class=3D"anchor" id=3D"line-11"></span><p class=3D"line891"=
+><strong>DRAM</strong> </p></td>
+  <td><p class=3D"line862">=EF=BB=BF2GB DDR3L 933MHz EMC x16 using 64-bit=
+ data width </p></td>
+</tr>
+<tr>  <td><span class=3D"anchor" id=3D"line-12"></span><p class=3D"line891"=
+><strong>Video out</strong> </p></td>
+  <td><p class=3D"line862">HDMI </p></td>
+</tr>
+<tr>  <td><span class=3D"anchor" id=3D"line-13"></span><p class=3D"line891"=
+><strong>Flash</strong> </p></td>
+  <td><p class=3D"line862">16GB fast eMMC 4.51 </p></td>
+</tr>
+<tr>  <td><span class=3D"anchor" id=3D"line-14"></span><p class=3D"line891"=
+><strong>Mini PCIe</strong> </p></td>
+  <td><p class=3D"line862">Addon wifi module, firewire IEEE 1394, etc. </p>=
+</td>
+</tr>
+<tr>  <td><span class=3D"anchor" id=3D"line-15"></span><p class=3D"line891"=
+><strong>Serial</strong> </p></td>
+  <td><p class=3D"line862">a full-size DB9 serial port </p></td>
+</tr>
+<tr>  <td><span class=3D"anchor" id=3D"line-16"></span><p class=3D"line891"=
+><strong>Power</strong> </p></td>
+  <td><p class=3D"line862">12V DC barrel power jack and a 4-pin PC IDE powe=
+r connector </p></td>
+</tr>
+</tbody></table></div><span class=3D"anchor" id=3D"line-17"></span><span cl=
+ass=3D"anchor" id=3D"line-18"></span><p class=3D"line867">
+</p><h2 id=3D"General_Setup">General Setup</h2>
+<span class=3D"anchor" id=3D"line-19"></span><span class=3D"anchor" id=3D"l=
+ine-20"></span><ul><li><p class=3D"line862">Optionally: install the latest=
+ <a class=3D"nonexistent" href=3D"http://wiki.ros.org/JetPack">JetPack</a>=
+ release (which will flash the latest L4T to your Jetson): <a class=3D"http=
+s" href=3D"https://developer.nvidia.com/jetson-tk1-development-pack">link</=
+a> <span class=3D"anchor" id=3D"line-21"></span></p></li><li><p class=3D"li=
+ne862">Next, install the <a class=3D"https" href=3D"https://devtalk.nvidia.=
+com/default/board/139/">Grinch Kernel</a> (pick a compatible version for yo=
+ur L4T release, which you can check on your Jetson using: <tt class=3D"back=
+tick">cat=C2=A0/etc/nv_tegra_release</tt>, e.g. <a class=3D"https" href=3D"=
+https://devtalk.nvidia.com/default/topic/823132/embedded-systems/-customker=
+nel-the-grinch-21-3-4-for-jetson-tk1-developed/1/">21.3</a>). It provides=
+ many useful drivers that NVidia failed to include with their stock kernel.=
+ <span class=3D"anchor" id=3D"line-22"></span></p></li><li><p class=3D"line=
+862">Install the nvidia cuda toolkit and opencv4tegra from <a class=3D"http=
+s" href=3D"https://developer.nvidia.com/linux-tegra-rel-21">https://develop=
+er.nvidia.com/linux-tegra-rel-21</a> (not necessary if you installed your=
+ Jetson through <a class=3D"nonexistent" href=3D"http://wiki.ros.org/JetPac=
+k">JetPack</a>) <span class=3D"anchor" id=3D"line-23"></span></p><ul><li>ol=
+der versions of the opencv4tegra we're packaged properly, and attempting to=
+ install them alongside the main opencv libraries would result in file conf=
+licts. use the latest version. <span class=3D"anchor" id=3D"line-24"></span=
+></li></ul></li><li>TODO: instructions or patches for making Opencv4tegra=
+ work with ROS binaries. <span class=3D"anchor" id=3D"line-25"></span><span=
+ class=3D"anchor" id=3D"line-26"></span></li></ul><p class=3D"line867">
+</p><h2 id=3D"Install_ROS">Install ROS</h2>
+<span class=3D"anchor" id=3D"line-27"></span><span class=3D"anchor" id=3D"l=
+ine-28"></span><p class=3D"line874">With the Ubuntu flavor installed the st=
+andard installation instructions should work. <span class=3D"anchor" id=3D"=
+line-29"></span><a href=3D"http://wiki.ros.org/indigo/Installation/UbuntuAR=
+M">indigo/Installation/UbuntuARM</a> <span class=3D"anchor" id=3D"line-30">=
+</span><span class=3D"anchor" id=3D"line-31"></span></p><p class=3D"line867=
+">
+</p><h2 id=3D"Use_opencv4tegra_with_ROS">Use opencv4tegra with ROS</h2>
+<span class=3D"anchor" id=3D"line-32"></span><span class=3D"anchor" id=3D"l=
+ine-33"></span><p class=3D"line874">opencv4tegra is not recognized by ROS=
+ and replaced by the "official" OpenCV library from Ubuntu repository, losi=
+ng Nvidia optimization and CUDA support. <span class=3D"anchor" id=3D"line-=
+34"></span>A possibile solution to the problem is available on Nvidia forum=
+ <a class=3D"https" href=3D"https://devtalk.nvidia.com/default/topic/835118=
+/embedded-systems/incorrect-configuration-in-opencv4tegra-debian-packages-a=
+nd-solution">here</a> <span class=3D"anchor" id=3D"line-35"></span><span cl=
+ass=3D"anchor" id=3D"line-36"></span></p><p class=3D"line862">Please note=
+ that opencv4tegra does not include "nonfree" module, so if your algorithms=
+ use SIFT or SURF and you want full CUDA support, the only solution is to=
+ compile OpenCV by yourself following this <a class=3D"http" href=3D"http:/=
+/elinux.org/Jetson/Installing_OpenCV">guide</a>. <span class=3D"anchor" id=
+=3D"line-37"></span>Remember that compiling OpenCV by yourself you will los=
+e Nvidia optimizations on the code running on the CPU that give 3-4 FPS mor=
+e on heavy algorithms not running on CUDA. <span class=3D"anchor" id=3D"lin=
+e-38"></span><span class=3D"anchor" id=3D"line-39"></span></p><p class=3D"l=
+ine867">
+</p><h2 id=3D"Known_Issues">Known Issues</h2>
+<span class=3D"anchor" id=3D"line-40"></span><span class=3D"anchor" id=3D"l=
+ine-41"></span><p class=3D"line874">As seen on ROS answers: <span class=3D"=
+anchor" id=3D"line-42"></span><span class=3D"anchor" id=3D"line-43"></span>=
+</p><ul><li><p class=3D"line891"><a class=3D"http" href=3D"http://answers.r=
+os.org/question/198058/cmake-error-while-building-rpg_svo/">bug in opencv=
+ cmake files</a> <span class=3D"anchor" id=3D"line-44"></span></p></li><li>=
+<p class=3D"line891"><a class=3D"http" href=3D"http://answers.ros.org/quest=
+ion/196194/ros-indigo-installation-for-ubuntu-arm-jetson-tk1-ubuntu-1404/">=
+using opencv4tegra with ROS</a> <span class=3D"anchor" id=3D"line-45"></spa=
+n></p></li><li><p class=3D"line891"><a class=3D"http" href=3D"http://answer=
+s.ros.org/question/197810/image_view-frozen-image/">image view freezes</a>=
+ <span class=3D"anchor" id=3D"line-46"></span><span class=3D"anchor" id=3D"=
+line-47"></span></p></li></ul><p class=3D"line867"><span class=3D"anchor"=
+ id=3D"line-48"></span></p><p class=3D"line867"><span class=3D"anchor" id=
+=3D"line-49"></span></p><p class=3D"line867"><span class=3D"anchor" id=3D"l=
+ine-50"></span><span class=3D"anchor" id=3D"bottom"></span></p></div></div>
+<div id=3D"pagebottom"></div>
+</div>
+
+<p id=3D"pageinfo" class=3D"info" dir=3D"ltr" lang=3D"en">Wiki: NvidiaJetso=
+nTK1  (last edited 2015-07-30 12:09:37 by <span title=3D"koenlek @ static.k=
+pn.net[217.166.65.146]"><a class=3D"nonexistent" href=3D"http://wiki.ros.or=
+g/KoenLekkerkerker" title=3D"koenlek @ static.kpn.net[217.166.65.146]">Koen=
+Lekkerkerker</a></span>)</p>
+
+
+
+
+<div style=3D"margin-top: 9px;" class=3D"footer">
+Except where otherwise noted, the ROS wiki is licensed under the <br><a hre=
+f=3D"http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribut=
+ion 3.0</a> | <a href=3D"https://plus.google.com/113789706402978299308" rel=
+=3D"publisher">Find us on Google+</a>
+<hr style=3D"margin-top: 10px;">
+<div class=3D"row">
+  <div class=3D"col-md-4 col-md-offset-4">
+<a href=3D"http://www.osrfoundation.org/"><img style=3D"margin-top: -1px;"=
+ src=3D"http://wiki.ros.org/custom/images/brought_by_horiz.png"><p></p></a>
+  </div>
+</div>
+</div>
+
+  </div> <!-- /#dpage-inner, /#dpage -->
+
+
+
+
+
+</body></html>
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/images/ros_org.png
+
+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
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/images/menu_left.png
+
+iVBORw0KGgoAAAANSUhEUgAAABEAAAA1CAIAAAAoMpeNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAATtJREFUeNq8VkFuxDAIhMiP6bGHPqI/6E/6+2WaWFUWLEPGabXWHjaO
+BxgMQ/Tz61sW1ybrqwFYxmQvMluquvvR81j/XazdVoPCYfQJQ8FHzBuJf5FgDP+Wt51rlpKYt3Nf
+pbiDFujI07YeT5gxlWaJvZ4Cze5UJ0EfHjWNzcymvA1G1Q5Ze7dq9CUYzTF+f9tcaxqH8bllYxvO
+/DkH/k6LfYrPndjQl9cQMLUTei6r0Up3ipyeJkY+GWYHTEM9/Ax3zHALfjy+l9h23acR3+txMkGs
+ge2AxylArI5itd6GV82rnZF18AhBM6HFWQIPxnTE/Oo1Lsx2NhHDpK3qH819qa8DTY7lIt/EUi03
+Zmb5qV98oTQTELQHrVJZ7h9mbnvdqTCsH0Z3DgyjtyyfIrZb34kf72+rmB8BBgDqYPyezS1p9gAA
+AABJRU5ErkJggg==
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/images/menu_documentation.png
+
+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
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/images/menu_spacer.png
+
+iVBORw0KGgoAAAANSUhEUgAAAEUAAAA1CAIAAACYzbG/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAA4VJREFUeNrcWkt22zAM9PjpMF120UPkBr1Jbx9OYyehAIpDgiYV58Ur
+P1mCMPgOQOPl77/LD/psS6Xx8wuehofkOmk4AHuuf3ZwULYHEPBPF3B+WxY75tXCDVkr5R8qe8/5
+k1q/Ka9mrTa23paOdr22hAqnoI+NpXvQkImDK4mcPwGrwEht4ceQV2B/o72Ojq+OvjR4yG6kK8MT
+sWhiP6NooSEQewWe1KvXSSTcI8GNah7zLpPzMmW9tt8LAEvL+okyN2shi+H2MtbjL99G70RnAmsa
+ZVeK+oKRFlD6J6nqAyXLhkwvGaqFrJdbKVBjFJ6UYn2DY/FTunp9x5Lx9lozRuEcjOaDTkV2xTbS
+OMLfUHsX710wmbhC33jo4QQdZ71dx9qaIevb9ZNQ8eOnlA22syAIJ95++ND1Teb+xB0AdnCsxlOj
+LXc79pYVLWS+3hILVbZiqppIdd/0vY3fiuKHGESI0GA2bcKftKzU2tgpR1TjATrwbA99oE7U1Qjw
+61KJ6m3qWWpukQL19OA3GiJZf2MWG5rnJht5kILo1w2MvdsZpOMknJFm9Ew8Z4TDNiMoyFnDcbWC
+j6YY4ZlR6CtDwOFpGHKVjWfmqJXxtsrGZ/tqe1ZgfEW8qcBYiPMksWP1OkjgI/Xt9Hij2EUhxmW+
+XX2zYIrd2rWm0cI9yRm1bs+f95FNrAuRqROLfHOzTeV6yU31SmxVvAluBDsYEenSWY4Uxs6w/aJd
+TbTaz2YHAJo9MKf4m7GlIPN+dZWDVS3aUQy4ZuMi9g2M7Ow3eXYgNpCFG+Q4+Cp2aXh4fVSappp+
+b/nj0qR9oIFZ7oNi9Ztg3b7naCe272B8ZWbpH3bstOdZJEQFZvp0Vc3i8R7g/ePslxSmyKliCPOh
+hvSfGOJv++6lsdQwtUH1Ipj63qAXyQKIuAeB+dQ1Aa8efGwcm5Hch+jAzY/QVBwEjM/gvirJzXlX
++PzwMCAyiucSSMlgQRvlL86Nq/DUF4I+f2Ry++uu5fYKAkzcomicjmlhqMhsTgef9T6Z+mEHW9Or
++UDP325Hjrmu1fO4OIrGkH9a8cyB8smjdWoK3VCn6oyUFB+xXMY/U5sXlPIc/GfB+yPsM4TH5wgK
+tab2iZOz3dPm7S/+NFRS5wuCH3wPDI020D3R2GYOKyd9qxSNtDt1zzP3b5xYuah7rpef9dn+/P71
+k/D8F2AAenem6nq5qEYAAAAASUVORK5CYII=
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/images/menu_browse_software.png
+
+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
+AAAASUVORK5CYII=
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/images/menu_news.png
+
+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
+AABJRU5ErkJggg==
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/images/menu_download.png
+
+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
+QmCC
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/images/menu_right.png
+
+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
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/moin_static197/rostheme/img/alert.png
+
+iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBI
+WXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAPAAAADwBjHBMTAAAA8UlEQVQoz5WSMWrDQBBF3wqh
+aisXOYCLpMkNhGDBqAi48hHcBOMbqDCLi9wgpMs1XLgZML6AT5JiqyVkUxiFZKURzodtZvjz5i9j
+RARNzrkkIkbrF1NG31mcc+lf5t642weOh0odoJJ3+wDAoo1qLJNnds6l46EC4HyqqJuruX2K5PlH
+yYs2cj5V+JfA26tV6YVGzTWWfUDWKGP1H/MUVaOX2vS6ifjOUjdBpRdT1MtlWMvpyXc2fX3y562W
+swSkx/u7Qc93NgGp7FfMtdkGYMZm+zHo1U3kYT6/Hsktn/Vb/cGUACJintfrdKtZ5N0AfAMBm4HK
+Tz+3kQAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/images/brought_by_horiz.png
+
+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
+QmCC
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/vnd.microsoft.icon
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/custom/favicon.ico
+
+AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAD+/v7////////////7+/r/+/r5//7+/v///////v7/////////////////////////////
+//////z7+//5+Pj//Pz8/////////////v7+//////////////////7+/v///////v7+//r5+P/7
++vr////////////+/v7////////////8/Pz/1MvH/6KQhv+ahXv/wbSu//f19P//////////////
+/////////v7+///////g2tf/pZOK/5B5b/+qmZH/6OPh///////////////////////+/v7/////
+//Xy8v+7raf/knxy/5uGff/Qx8P//f39///////+/v7//f39/8O3sf9fPS7/UzAf/1QwH/9VMiL/
+nId9//z7+//+/v7/////////////////497b/2pLPP9TLx3/UjAf/1MvH/90WEv/5uHf////////
+///////////////+////jXdr/1EtHf9SMB//Ui8f/1s6Kv+6q6X////////////29PT/dVlL/1Qx
+IP9bOSn/XDoq/1k3J/9VMyL/29PP//////////////////////+Re3H/TysZ/1w6Kv9bOir/Wzoo
+/1MyH/+rmpH//Pz8/////////////////8vAvP9PKxn/Wzkp/1s6Kv9bOir/WDcm/3BTRf/p5OL/
+//////Xy8f9qSzz/VzQk/1w6Kv9cOir/XDoq/08qGf+6raX//////////////////////3JXSf9U
+MSD/XDoq/1s6Kv9cOyf/UzId/5B6bf/5+Pj/////////////////qJWN/1EsG/9cOir/Wzoq/1s6
+Kv9aOSn/YEAw/9fOyv//////9fTz/3BSRP9VMiH/XTsr/107K/9bOSn/Ui4d/9DIw///////////
+////////////i3Rp/08rGf9dPCv/XDsr/108Kf9TMR3/pZOJ//z7+//////////////////FubT/
+TikY/1s6Kv9bOyv/XDsr/1g3Jv9sTj//5eHe///////8/Pz/sKGZ/1EtHP9VMSH/VjMi/00oF/+G
+bWD/9vXz///////////////////////d1tP/Xz4u/1AsGv9VMiL/UC0Z/2pNPP/g29f/////////
+//////////////r6+f+Eal7/SiYU/1QxIf9TMB7/Ui4d/7Khmf/////////////////7+vn/u62n
+/3dcT/9vUkP/oIyC/+/r6v///////v7+/////////////v7+//7+/v/f19T/jXZr/3RXSv+RfHH/
+497b///////////////////////+/v7///////Ty8f+pl4//d1pM/39kWP/Hu7X////////////+
+/v7//v7+//////////////////////////////////7+/v///////////////////////v7+////
+/////////////////////////v7+////////////////////////////////////////////////
+///////+/v7///////////////////////7+/v////////////7+/v//////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////7+/v//////
+/////////////////v7+/////////////////////////////v7+//7+/v/////////////////+
+/v7//////////////////////////////////v7+//////////////////7+/v//////////////
+/////////v7+//Lv7v/Jv7r/wLSu/+Xg3f/9/f3///////////////////////7+/v//////+vr5
+/9rTz/+9sKr/1czJ//v6+v///////////////////////v7+///////9/fz/6+bk/8q/uv/Vzcn/
++Pf2/////////////v7+//7+/v/b08//dFdI/1MwHv9SLh3/YkAx/72uqP/9/f3//v7+////////
+//////////f19P+ahnz/VjQk/1EtHP9WMyL/jnZr/+/t6////////////////////////////7qs
+pf9hQDH/UzAe/1UyIf9+Y1X/5N7c///////+/v7/+Pf2/4ZuYP9UMiD/Xj0t/18+Lv9ZNib/YT8w
+/+Xg3f//////////////////////vrCq/1AtG/9cOir/YD8v/1w7K/9VMiH/r56W//z8/P//////
+///////////a1ND/WDYl/1o3J/9fPi7/Xj0t/1Y0I/+Lc2j/9/X1///////18/L/bU9B/1o4J/9f
+Pi7/Xz4u/149Lf9TLx7/v7Ks//////////////////////+Kcmf/VTEh/2A/Lv9fPi7/Xz4u/1g2
+Jv+HcGP/+Pf2/////////////////6aUi/9UMB//Xz4u/18+Lv9fPi7/Xj0t/2pMPP/f2dX/////
+//Xz8v9vUUL/Wjgo/2A/L/9gPy//YD4u/1UxIP/Ivbf//////////////////////5N9cv9UMh7/
+YEAt/2BALP9gPy//WDYl/452a//5+Pf/////////////////rJuS/1MwHv9gPy//YD8v/2A/L/9e
+PS3/bU5B/+Lc2v//////+vn5/5yIfv9VMiH/Wzop/107K/9WMyL/dVlK//Hv7f//////////////
+////////08rG/1s6Jv9ZOCT/XTwp/1o4KP9cOir/xLiy//7+/f/////////////////n4uD/YkIy
+/1c1I/9dPCz/XDsq/1c1JP+ahXr/+/v6////////////7+zq/5yIfv9pSTr/ZUU2/4VrX//a0s//
+/v7+//7+/v////////////7+/v/9/f3/wraw/3VYSf9kQzP/cVNE/7eoof/6+fn/////////////
+/////v7+///////TycX/eV1P/18+Lv9kRDX/mYR6//Lv7v///////v7+////////////+/r5//Hu
+7P/s6Ob/+Pf2//7+/v///////////////////////v7+///////9/f3/9vPz/+vn5P/29PP//Pz8
+///////+/v7////////////+/v7///////7+/v/18/L/5eDd/+7r6v/6+fn///////7+/v/+/v7/
+///////////+/v7////////////+/v7///////////////////////////////////////7+/v//
+//////////7+/v///////////////////////////////////////v7+//////////////////7+
+/v//////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////v7+//////////////////7+/v//
+///////////////////////////////+/v7//////////////////v7+////////////////////
+//////////////7+/v/////////////////+/v7//////////////////v7+////////////8u/v
+/+zo5v////////////7+/v/////////////////////////////////6+fn/6ubj//v7+v//////
+/v7+//7+/v/////////////////+/v7////////////s6Of/9vTz///////+/v7//v7+////////
+////8/Hw/5+Lgf9lRTX/YT8w/4RpXf/j3dr///////7+/v/////////////////8/Pv/xbiy/29Q
+Qv9gPi7/blBB/8K2r//+/v7////////////////////////////i29n/f2NX/2A+Lv9lRDT/pZGI
+//r5+P///////v7+//v6+v+jkIb/VjEg/2A/L/9iQDD/WDMj/3pdUP/y7+7/////////////////
+/////9PKxf9aNyb/XDop/2FAMP9cOir/YD4t/87Ev//+/v7/////////////////7uvp/2pLPP9Y
+NSP/YUAw/2A+Lv9XMyL/pJCH//79/f//////9fPz/3RVR/9ePCv/ZEMz/2RDM/9jQjL/WDQj/8zB
+vP//////////////////////j3dr/1g0I/9kRDT/Y0Iy/2NCMv9bOSj/moV6//r5+f//////////
+//////+yo5v/VjEg/2VENP9kQzP/ZEMz/2JBMf9yVEb/5uDe///////18/L/cVJE/189Lf9kQzP/
+ZEMz/2NCM/9XNCL/wbOt//////////////////////+DaFz/Wzgn/2RDM/9kQzP/ZEMz/106Kf+R
+e2//+fj3/////////////////6eUiv9YNSP/ZEMz/2RDMv9jQjL/Y0Iy/21PQP/f2NX///////j2
+9v+HbWH/XDop/2NCMv9jQjL/YT8v/2RDM//m4d7//////////////////////7Ojm/9XMyL/ZEMz
+/2RDM/9kQjL/Xjsr/7annv/9/fz/////////////////1czH/1k3Jv9jQTH/Y0Iy/2NCMv9hQC//
+iG9j//Xz8v///////v7+/9fPy/92WUv/YT8u/189LP9oSDj/tqaf//39/f/+/v7/////////////
+////9vTz/493bP9iQDD/Xz0s/2JBMf+QeG3/8e7t///////////////////+////////rJqR/2RD
+M/9fPSz/YT8v/3hbTf/a08////////7+/v///////////+jj4f/BtK7/uquk/9nSzv/8/Pv/////
+//////////////////7+/v//////9PLx/8zBvP+3qKH/zcG8//Px8P///////v7+////////////
+/v7+///////9/f3/1s7K/7mqo//EuLH/6eXj///////+/v7//v7+//7+/v////////////7+/v/9
+/f3////////////+/v7//////////////////////////////////v7+//39/f////////////7+
+/v/+/v7//////////////////v7+/////////////f39//7+/v///////v7+//7+/v//////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAA=
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-9C089D6C:http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css
+
+/* Effective stylesheet produced by snapshot save */
+audio:not([controls]) { display: none; height: 0px; }
+html { font-family: sans-serif; }
+body { margin: 0px; }
+a { background: transparent none repeat scroll 0% 0%; }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0px none; }
+h1 { margin: 0.67em 0px; font-size: 2em; }
+b, strong { font-weight: bold; }
+hr { height: 0px; box-sizing: content-box; }
+img { border: 0px none; }
+svg:not(:root) { overflow: hidden; }
+button, input, select, textarea { margin: 0px; font-family: inherit; font-s=
+ize: 100%; }
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+button, html input[type=3D"button"], input[type=3D"reset"], input[type=3D"s=
+ubmit"] { cursor: pointer; }
+button::-moz-focus-inner, input::-moz-focus-inner { padding: 0px; border:=
+ 0px none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+@media print {
+  * { color: rgb(0, 0, 0) ! important; text-shadow: none ! important; backg=
+round: transparent none repeat scroll 0% 0% ! important; box-shadow: none=
+ ! important; }
+  a, a:visited { text-decoration: underline; }
+  a[href]::after { content: " (" attr(href) ")"; }
+  abbr[title]::after { content: " (" attr(title) ")"; }
+  a[href^=3D"javascript:"]::after, a[href^=3D"#"]::after { content: ""; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% ! important; }
+  @page { margin: 2cm 0.5cm; }
+  p, h2, h3 {  }
+  h2, h3 { page-break-after: avoid; }
+  select { background: rgb(255, 255, 255) none repeat scroll 0% 0% ! import=
+ant; }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: 62.5%; }
+body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size:=
+ 14px; line-height: 1.42857; color: rgb(51, 51, 51); background-color: rgb(=
+255, 255, 255); }
+input, button, select, textarea { font-family: inherit; font-size: inherit;=
+ line-height: inherit; }
+a { color: rgb(66, 139, 202); text-decoration: none; }
+a:hover, a:focus { color: rgb(42, 100, 150); text-decoration: underline; }
+a:focus { outline: thin dotted; outline-offset: -2px; }
+img { vertical-align: middle; }
+hr { margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; bord=
+er-style: solid none none; border-color: rgb(238, 238, 238) -moz-use-text-c=
+olor -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-c=
+olors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none=
+; border-image: none; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Helvet=
+ica Neue",Helvetica,Arial,sans-serif; font-weight: 500; line-height: 1.1;=
+ color: inherit; }
+h1, h2, h3 { margin-top: 20px; margin-bottom: 10px; }
+h1, .h1 { font-size: 36px; }
+h2, .h2 { font-size: 30px; }
+p { margin: 0px 0px 10px; }
+ul, ol { margin-top: 0px; margin-bottom: 10px; }
+ul ul, ol ul, ul ol, ol ol { margin-bottom: 0px; }
+@media (min-width: 768px) {
+  .dl-horizontal dd::before, .dl-horizontal dd::after { display: table; con=
+tent: " "; }
+  .dl-horizontal dd::after { clear: both; }
+  .dl-horizontal dd::before, .dl-horizontal dd::after { display: table; con=
+tent: " "; }
+  .dl-horizontal dd::after { clear: both; }
+}
+blockquote small::before, blockquote .small::before { content: "=E2=80=94=
+=C2=A0"; }
+blockquote.pull-right small::before, blockquote.pull-right .small::before=
+ { content: ""; }
+blockquote.pull-right small::after, blockquote.pull-right .small::after {=
+ content: "=C2=A0=E2=80=94"; }
+blockquote::before, blockquote::after { content: ""; }
+.container::before, .container::after { display: table; content: " "; }
+.container::after { clear: both; }
+.container::before, .container::after { display: table; content: " "; }
+.container::after { clear: both; }
+.row { margin-right: -15px; margin-left: -15px; }
+.row::before, .row::after { display: table; content: " "; }
+.row::after { clear: both; }
+.row::before, .row::after { display: table; content: " "; }
+.row::after { clear: both; }
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2=
+, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm=
+-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-=
+xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .co=
+l-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9,=
+ .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col=
+-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md=
+-12, .col-lg-12 { position: relative; min-height: 1px; padding-right: 15px;=
+ padding-left: 15px; }
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md=
+-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 { float: left;=
+ }
+  .col-md-4 { width: 33.3333%; }
+  .col-md-offset-4 { margin-left: 33.3333%; }
+}
+table { max-width: 100%; background-color: transparent; }
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody >=
+ tr:nth-child(2n+1) > th { background-color: rgb(249, 249, 249); }
+label { display: inline-block; margin-bottom: 5px; font-weight: bold; }
+.form-control::-moz-placeholder { color: rgb(153, 153, 153); opacity: 1; }
+.form-horizontal .form-group::before, .form-horizontal .form-group::after=
+ { display: table; content: " "; }
+.form-horizontal .form-group::after { clear: both; }
+.form-horizontal .form-group::before, .form-horizontal .form-group::after=
+ { display: table; content: " "; }
+.form-horizontal .form-group::after { clear: both; }
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("urn:not-loaded:http://netdna.bootstrapcdn.com/bootstrap/3.0.3/f=
+onts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),=
+ url("urn:not-loaded:http://netdna.bootstrapcdn.com/bootstrap/3.0.3/fonts/g=
+lyphicons-halflings-regular.woff") format("woff"), url("urn:not-loaded:http=
+://netdna.bootstrapcdn.com/bootstrap/3.0.3/fonts/glyphicons-halflings-regul=
+ar.ttf") format("truetype"), url("urn:not-loaded:http://netdna.bootstrapcdn=
+.com/bootstrap/3.0.3/fonts/glyphicons-halflings-regular.svg#glyphicons-half=
+lingsregular") format("svg");
+}
+.glyphicon-asterisk::before { content: "*"; }
+.glyphicon-plus::before { content: "+"; }
+.glyphicon-euro::before { content: "=E2=82=AC"; }
+.glyphicon-minus::before { content: "=E2=88=92"; }
+.glyphicon-cloud::before { content: "=E2=98=81"; }
+.glyphicon-envelope::before { content: "=E2=9C=89"; }
+.glyphicon-pencil::before { content: "=E2=9C=8F"; }
+.glyphicon-glass::before { content: "=EE=80=81"; }
+.glyphicon-music::before { content: "=EE=80=82"; }
+.glyphicon-search::before { content: "=EE=80=83"; }
+.glyphicon-heart::before { content: "=EE=80=85"; }
+.glyphicon-star::before { content: "=EE=80=86"; }
+.glyphicon-star-empty::before { content: "=EE=80=87"; }
+.glyphicon-user::before { content: "=EE=80=88"; }
+.glyphicon-film::before { content: "=EE=80=89"; }
+.glyphicon-th-large::before { content: "=EE=80=90"; }
+.glyphicon-th::before { content: "=EE=80=91"; }
+.glyphicon-th-list::before { content: "=EE=80=92"; }
+.glyphicon-ok::before { content: "=EE=80=93"; }
+.glyphicon-remove::before { content: "=EE=80=94"; }
+.glyphicon-zoom-in::before { content: "=EE=80=95"; }
+.glyphicon-zoom-out::before { content: "=EE=80=96"; }
+.glyphicon-off::before { content: "=EE=80=97"; }
+.glyphicon-signal::before { content: "=EE=80=98"; }
+.glyphicon-cog::before { content: "=EE=80=99"; }
+.glyphicon-trash::before { content: "=EE=80=A0"; }
+.glyphicon-home::before { content: "=EE=80=A1"; }
+.glyphicon-file::before { content: "=EE=80=A2"; }
+.glyphicon-time::before { content: "=EE=80=A3"; }
+.glyphicon-road::before { content: "=EE=80=A4"; }
+.glyphicon-download-alt::before { content: "=EE=80=A5"; }
+.glyphicon-download::before { content: "=EE=80=A6"; }
+.glyphicon-upload::before { content: "=EE=80=A7"; }
+.glyphicon-inbox::before { content: "=EE=80=A8"; }
+.glyphicon-play-circle::before { content: "=EE=80=A9"; }
+.glyphicon-repeat::before { content: "=EE=80=B0"; }
+.glyphicon-refresh::before { content: "=EE=80=B1"; }
+.glyphicon-list-alt::before { content: "=EE=80=B2"; }
+.glyphicon-lock::before { content: "=EE=80=B3"; }
+.glyphicon-flag::before { content: "=EE=80=B4"; }
+.glyphicon-headphones::before { content: "=EE=80=B5"; }
+.glyphicon-volume-off::before { content: "=EE=80=B6"; }
+.glyphicon-volume-down::before { content: "=EE=80=B7"; }
+.glyphicon-volume-up::before { content: "=EE=80=B8"; }
+.glyphicon-qrcode::before { content: "=EE=80=B9"; }
+.glyphicon-barcode::before { content: "=EE=81=80"; }
+.glyphicon-tag::before { content: "=EE=81=81"; }
+.glyphicon-tags::before { content: "=EE=81=82"; }
+.glyphicon-book::before { content: "=EE=81=83"; }
+.glyphicon-bookmark::before { content: "=EE=81=84"; }
+.glyphicon-print::before { content: "=EE=81=85"; }
+.glyphicon-camera::before { content: "=EE=81=86"; }
+.glyphicon-font::before { content: "=EE=81=87"; }
+.glyphicon-bold::before { content: "=EE=81=88"; }
+.glyphicon-italic::before { content: "=EE=81=89"; }
+.glyphicon-text-height::before { content: "=EE=81=90"; }
+.glyphicon-text-width::before { content: "=EE=81=91"; }
+.glyphicon-align-left::before { content: "=EE=81=92"; }
+.glyphicon-align-center::before { content: "=EE=81=93"; }
+.glyphicon-align-right::before { content: "=EE=81=94"; }
+.glyphicon-align-justify::before { content: "=EE=81=95"; }
+.glyphicon-list::before { content: "=EE=81=96"; }
+.glyphicon-indent-left::before { content: "=EE=81=97"; }
+.glyphicon-indent-right::before { content: "=EE=81=98"; }
+.glyphicon-facetime-video::before { content: "=EE=81=99"; }
+.glyphicon-picture::before { content: "=EE=81=A0"; }
+.glyphicon-map-marker::before { content: "=EE=81=A2"; }
+.glyphicon-adjust::before { content: "=EE=81=A3"; }
+.glyphicon-tint::before { content: "=EE=81=A4"; }
+.glyphicon-edit::before { content: "=EE=81=A5"; }
+.glyphicon-share::before { content: "=EE=81=A6"; }
+.glyphicon-check::before { content: "=EE=81=A7"; }
+.glyphicon-move::before { content: "=EE=81=A8"; }
+.glyphicon-step-backward::before { content: "=EE=81=A9"; }
+.glyphicon-fast-backward::before { content: "=EE=81=B0"; }
+.glyphicon-backward::before { content: "=EE=81=B1"; }
+.glyphicon-play::before { content: "=EE=81=B2"; }
+.glyphicon-pause::before { content: "=EE=81=B3"; }
+.glyphicon-stop::before { content: "=EE=81=B4"; }
+.glyphicon-forward::before { content: "=EE=81=B5"; }
+.glyphicon-fast-forward::before { content: "=EE=81=B6"; }
+.glyphicon-step-forward::before { content: "=EE=81=B7"; }
+.glyphicon-eject::before { content: "=EE=81=B8"; }
+.glyphicon-chevron-left::before { content: "=EE=81=B9"; }
+.glyphicon-chevron-right::before { content: "=EE=82=80"; }
+.glyphicon-plus-sign::before { content: "=EE=82=81"; }
+.glyphicon-minus-sign::before { content: "=EE=82=82"; }
+.glyphicon-remove-sign::before { content: "=EE=82=83"; }
+.glyphicon-ok-sign::before { content: "=EE=82=84"; }
+.glyphicon-question-sign::before { content: "=EE=82=85"; }
+.glyphicon-info-sign::before { content: "=EE=82=86"; }
+.glyphicon-screenshot::before { content: "=EE=82=87"; }
+.glyphicon-remove-circle::before { content: "=EE=82=88"; }
+.glyphicon-ok-circle::before { content: "=EE=82=89"; }
+.glyphicon-ban-circle::before { content: "=EE=82=90"; }
+.glyphicon-arrow-left::before { content: "=EE=82=91"; }
+.glyphicon-arrow-right::before { content: "=EE=82=92"; }
+.glyphicon-arrow-up::before { content: "=EE=82=93"; }
+.glyphicon-arrow-down::before { content: "=EE=82=94"; }
+.glyphicon-share-alt::before { content: "=EE=82=95"; }
+.glyphicon-resize-full::before { content: "=EE=82=96"; }
+.glyphicon-resize-small::before { content: "=EE=82=97"; }
+.glyphicon-exclamation-sign::before { content: "=EE=84=81"; }
+.glyphicon-gift::before { content: "=EE=84=82"; }
+.glyphicon-leaf::before { content: "=EE=84=83"; }
+.glyphicon-fire::before { content: "=EE=84=84"; }
+.glyphicon-eye-open::before { content: "=EE=84=85"; }
+.glyphicon-eye-close::before { content: "=EE=84=86"; }
+.glyphicon-warning-sign::before { content: "=EE=84=87"; }
+.glyphicon-plane::before { content: "=EE=84=88"; }
+.glyphicon-calendar::before { content: "=EE=84=89"; }
+.glyphicon-random::before { content: "=EE=84=90"; }
+.glyphicon-comment::before { content: "=EE=84=91"; }
+.glyphicon-magnet::before { content: "=EE=84=92"; }
+.glyphicon-chevron-up::before { content: "=EE=84=93"; }
+.glyphicon-chevron-down::before { content: "=EE=84=94"; }
+.glyphicon-retweet::before { content: "=EE=84=95"; }
+.glyphicon-shopping-cart::before { content: "=EE=84=96"; }
+.glyphicon-folder-close::before { content: "=EE=84=97"; }
+.glyphicon-folder-open::before { content: "=EE=84=98"; }
+.glyphicon-resize-vertical::before { content: "=EE=84=99"; }
+.glyphicon-resize-horizontal::before { content: "=EE=84=A0"; }
+.glyphicon-hdd::before { content: "=EE=84=A1"; }
+.glyphicon-bullhorn::before { content: "=EE=84=A2"; }
+.glyphicon-bell::before { content: "=EE=84=A3"; }
+.glyphicon-certificate::before { content: "=EE=84=A4"; }
+.glyphicon-thumbs-up::before { content: "=EE=84=A5"; }
+.glyphicon-thumbs-down::before { content: "=EE=84=A6"; }
+.glyphicon-hand-right::before { content: "=EE=84=A7"; }
+.glyphicon-hand-left::before { content: "=EE=84=A8"; }
+.glyphicon-hand-up::before { content: "=EE=84=A9"; }
+.glyphicon-hand-down::before { content: "=EE=84=B0"; }
+.glyphicon-circle-arrow-right::before { content: "=EE=84=B1"; }
+.glyphicon-circle-arrow-left::before { content: "=EE=84=B2"; }
+.glyphicon-circle-arrow-up::before { content: "=EE=84=B3"; }
+.glyphicon-circle-arrow-down::before { content: "=EE=84=B4"; }
+.glyphicon-globe::before { content: "=EE=84=B5"; }
+.glyphicon-wrench::before { content: "=EE=84=B6"; }
+.glyphicon-tasks::before { content: "=EE=84=B7"; }
+.glyphicon-filter::before { content: "=EE=84=B8"; }
+.glyphicon-briefcase::before { content: "=EE=84=B9"; }
+.glyphicon-fullscreen::before { content: "=EE=85=80"; }
+.glyphicon-dashboard::before { content: "=EE=85=81"; }
+.glyphicon-paperclip::before { content: "=EE=85=82"; }
+.glyphicon-heart-empty::before { content: "=EE=85=83"; }
+.glyphicon-link::before { content: "=EE=85=84"; }
+.glyphicon-phone::before { content: "=EE=85=85"; }
+.glyphicon-pushpin::before { content: "=EE=85=86"; }
+.glyphicon-usd::before { content: "=EE=85=88"; }
+.glyphicon-gbp::before { content: "=EE=85=89"; }
+.glyphicon-sort::before { content: "=EE=85=90"; }
+.glyphicon-sort-by-alphabet::before { content: "=EE=85=91"; }
+.glyphicon-sort-by-alphabet-alt::before { content: "=EE=85=92"; }
+.glyphicon-sort-by-order::before { content: "=EE=85=93"; }
+.glyphicon-sort-by-order-alt::before { content: "=EE=85=94"; }
+.glyphicon-sort-by-attributes::before { content: "=EE=85=95"; }
+.glyphicon-sort-by-attributes-alt::before { content: "=EE=85=96"; }
+.glyphicon-unchecked::before { content: "=EE=85=97"; }
+.glyphicon-expand::before { content: "=EE=85=98"; }
+.glyphicon-collapse-down::before { content: "=EE=85=99"; }
+.glyphicon-collapse-up::before { content: "=EE=85=A0"; }
+.glyphicon-log-in::before { content: "=EE=85=A1"; }
+.glyphicon-flash::before { content: "=EE=85=A2"; }
+.glyphicon-log-out::before { content: "=EE=85=A3"; }
+.glyphicon-new-window::before { content: "=EE=85=A4"; }
+.glyphicon-record::before { content: "=EE=85=A5"; }
+.glyphicon-save::before { content: "=EE=85=A6"; }
+.glyphicon-open::before { content: "=EE=85=A7"; }
+.glyphicon-saved::before { content: "=EE=85=A8"; }
+.glyphicon-import::before { content: "=EE=85=A9"; }
+.glyphicon-export::before { content: "=EE=85=B0"; }
+.glyphicon-send::before { content: "=EE=85=B1"; }
+.glyphicon-floppy-disk::before { content: "=EE=85=B2"; }
+.glyphicon-floppy-saved::before { content: "=EE=85=B3"; }
+.glyphicon-floppy-remove::before { content: "=EE=85=B4"; }
+.glyphicon-floppy-save::before { content: "=EE=85=B5"; }
+.glyphicon-floppy-open::before { content: "=EE=85=B6"; }
+.glyphicon-credit-card::before { content: "=EE=85=B7"; }
+.glyphicon-transfer::before { content: "=EE=85=B8"; }
+.glyphicon-cutlery::before { content: "=EE=85=B9"; }
+.glyphicon-header::before { content: "=EE=86=80"; }
+.glyphicon-compressed::before { content: "=EE=86=81"; }
+.glyphicon-earphone::before { content: "=EE=86=82"; }
+.glyphicon-phone-alt::before { content: "=EE=86=83"; }
+.glyphicon-tower::before { content: "=EE=86=84"; }
+.glyphicon-stats::before { content: "=EE=86=85"; }
+.glyphicon-sd-video::before { content: "=EE=86=86"; }
+.glyphicon-hd-video::before { content: "=EE=86=87"; }
+.glyphicon-subtitles::before { content: "=EE=86=88"; }
+.glyphicon-sound-stereo::before { content: "=EE=86=89"; }
+.glyphicon-sound-dolby::before { content: "=EE=86=90"; }
+.glyphicon-sound-5-1::before { content: "=EE=86=91"; }
+.glyphicon-sound-6-1::before { content: "=EE=86=92"; }
+.glyphicon-sound-7-1::before { content: "=EE=86=93"; }
+.glyphicon-copyright-mark::before { content: "=EE=86=94"; }
+.glyphicon-registration-mark::before { content: "=EE=86=95"; }
+.glyphicon-cloud-download::before { content: "=EE=86=97"; }
+.glyphicon-cloud-upload::before { content: "=EE=86=98"; }
+.glyphicon-tree-conifer::before { content: "=EE=86=99"; }
+.glyphicon-tree-deciduous::before { content: "=EE=88=80"; }
+.btn-toolbar::before, .btn-toolbar::after { display: table; content: " ";=
+ }
+.btn-toolbar::after { clear: both; }
+.btn-toolbar::before, .btn-toolbar::after { display: table; content: " ";=
+ }
+.btn-toolbar::after { clear: both; }
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle)=
+ { border-radius: 0px; }
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) { bord=
+er-top-right-radius: 0px; border-bottom-right-radius: 0px; }
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .dropdown-togg=
+le:not(:first-child) { border-bottom-left-radius: 0px; border-top-left-radi=
+us: 0px; }
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn { border-=
+radius: 0px; }
+.btn-group-vertical > .btn-group::before, .btn-group-vertical > .btn-group:=
+:after { display: table; content: " "; }
+.btn-group-vertical > .btn-group::after { clear: both; }
+.btn-group-vertical > .btn-group::before, .btn-group-vertical > .btn-group:=
+:after { display: table; content: " "; }
+.btn-group-vertical > .btn-group::after { clear: both; }
+.btn-group-vertical > .btn:not(:first-child):not(:last-child) { border-radi=
+us: 0px; }
+.btn-group-vertical > .btn:first-child:not(:last-child) { border-top-right-=
+radius: 4px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0p=
+x; }
+.btn-group-vertical > .btn:last-child:not(:first-child) { border-top-right-=
+radius: 0px; border-bottom-left-radius: 4px; border-top-left-radius: 0px;=
+ }
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn=
+ { border-radius: 0px; }
+.input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not=
+(:first-child):not(:last-child), .input-group .form-control:not(:first-chil=
+d):not(:last-child) { border-radius: 0px; }
+.input-group .form-control:first-child, .input-group-addon:first-child, .in=
+put-group-btn:first-child > .btn, .input-group-btn:first-child > .dropdown-=
+toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-t=
+oggle) { border-top-right-radius: 0px; border-bottom-right-radius: 0px; }
+.input-group .form-control:last-child, .input-group-addon:last-child, .inpu=
+t-group-btn:last-child > .btn, .input-group-btn:last-child > .dropdown-togg=
+le, .input-group-btn:first-child > .btn:not(:first-child) { border-bottom-l=
+eft-radius: 0px; border-top-left-radius: 0px; }
+.nav::before, .nav::after { display: table; content: " "; }
+.nav::after { clear: both; }
+.nav::before, .nav::after { display: table; content: " "; }
+.nav::after { clear: both; }
+.navbar::before, .navbar::after { display: table; content: " "; }
+.navbar::after { clear: both; }
+.navbar::before, .navbar::after { display: table; content: " "; }
+.navbar::after { clear: both; }
+.navbar-header::before, .navbar-header::after { display: table; content: "=
+ "; }
+.navbar-header::after { clear: both; }
+.navbar-header::before, .navbar-header::after { display: table; content: "=
+ "; }
+.navbar-header::after { clear: both; }
+.navbar-collapse::before, .navbar-collapse::after { display: table; content=
+: " "; }
+.navbar-collapse::after { clear: both; }
+.navbar-collapse::before, .navbar-collapse::after { display: table; content=
+: " "; }
+.navbar-collapse::after { clear: both; }
+.breadcrumb > li + li::before { padding: 0px 5px; color: rgb(204, 204, 204)=
+; content: "/=C2=A0"; }
+.pager::before, .pager::after { display: table; content: " "; }
+.pager::after { clear: both; }
+.pager::before, .pager::after { display: table; content: " "; }
+.pager::after { clear: both; }
+@keyframes progress-bar-stripes {
+  0% { background-position: 40px 0px; }
+  100% { background-position: 0px 0px; }
+}
+.panel-body::before, .panel-body::after { display: table; content: " "; }
+.panel-body::after { clear: both; }
+.panel-body::before, .panel-body::after { display: table; content: " "; }
+.panel-body::after { clear: both; }
+.modal-footer::before, .modal-footer::after { display: table; content: " ";=
+ }
+.modal-footer::after { clear: both; }
+.modal-footer::before, .modal-footer::after { display: table; content: " ";=
+ }
+.modal-footer::after { clear: both; }
+.popover .arrow, .popover .arrow::after { position: absolute; display: bloc=
+k; width: 0px; height: 0px; border-color: transparent; border-style: solid;=
+ }
+.popover .arrow::after { border-width: 10px; content: ""; }
+.popover.top .arrow::after { bottom: 1px; margin-left: -10px; border-top-co=
+lor: rgb(255, 255, 255); border-bottom-width: 0px; content: " "; }
+.popover.right .arrow::after { bottom: -10px; left: 1px; border-right-color=
+: rgb(255, 255, 255); border-left-width: 0px; content: " "; }
+.popover.bottom .arrow::after { top: 1px; margin-left: -10px; border-bottom=
+-color: rgb(255, 255, 255); border-top-width: 0px; content: " "; }
+.popover.left .arrow::after { right: 1px; bottom: -10px; border-left-color:=
+ rgb(255, 255, 255); border-right-width: 0px; content: " "; }
+.carousel-control .icon-prev::before { content: "=E2=80=B9"; }
+.carousel-control .icon-next::before { content: "=E2=80=BA"; }
+.clearfix::before, .clearfix::after { display: table; content: " "; }
+.clearfix::after { clear: both; }
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-31199DF2:http://wiki.ros.org/moin_static197/rostheme/css/common.css
+
+/* Effective stylesheet produced by snapshot save */
+html { background-color: white; color: black; font-family: Helvetica,Verdan=
+a,Arial,Lucida Grande,sans-serif; font-size: 11pt; }
+body { margin: 0px; }
+a { color: rgb(43, 127, 207); }
+a:visited { color: rgb(43, 127, 207); }
+a.nonexistent:visited, a.badinterwiki:visited, a.nonexistent, a.badinterwik=
+i { color: gray; }
+a.www::before { content: url("http://wiki.ros.org/moin_static197/rostheme/i=
+mg/moin-www.png"); margin: 0px 0.2em; }
+a.http::before { content: url("http://wiki.ros.org/moin_static197/rostheme/=
+img/moin-www.png"); margin: 0px 0.2em; }
+a.https::before { content: url("http://wiki.ros.org/moin_static197/rostheme=
+/img/moin-www.png"); margin: 0px 0.2em; }
+a.file::before { content: url("urn:not-loaded:http://wiki.ros.org/moin_stat=
+ic197/rostheme/img/moin-ftp.png"); margin: 0px 0.2em; }
+a.ftp::before { content: url("urn:not-loaded:http://wiki.ros.org/moin_stati=
+c197/rostheme/img/moin-ftp.png"); margin: 0px 0.2em; }
+a.nntp::before { content: url("urn:not-loaded:http://wiki.ros.org/moin_stat=
+ic197/rostheme/img/moin-news.png"); margin: 0px 0.2em; }
+a.news::before { content: url("urn:not-loaded:http://wiki.ros.org/moin_stat=
+ic197/rostheme/img/moin-news.png"); margin: 0px 0.2em; }
+a.telnet::before, a.ssh::before { content: url("urn:not-loaded:http://wiki.=
+ros.org/moin_static197/rostheme/img/moin-telnet.png"); margin: 0px 0.2em;=
+ }
+a.irc::before, a.ircs::before { content: url("urn:not-loaded:http://wiki.ro=
+s.org/moin_static197/rostheme/img/moin-telnet.png"); margin: 0px 0.2em; }
+a.mailto::before { content: url("urn:not-loaded:http://wiki.ros.org/moin_st=
+atic197/rostheme/img/moin-email.png"); margin: 0px 0.2em; }
+a.attachment::before { content: url("urn:not-loaded:http://wiki.ros.org/moi=
+n_static197/rostheme/img/moin-attach.png"); margin: 0px 0.2em; }
+a.badinterwiki::before { content: url("urn:not-loaded:http://wiki.ros.org/m=
+oin_static197/rostheme/img/moin-inter.png"); margin: 0px 0.2em; }
+a.interwiki::before { content: url("urn:not-loaded:http://wiki.ros.org/moin=
+_static197/rostheme/img/moin-inter.png"); margin: 0px 0.2em; }
+li p { margin: 0.25em 0px; }
+a, img, img.drawing { border: 0px none; }
+pre.comment::before { content: url("urn:not-loaded:http://wiki.ros.org/moin=
+_static197/rostheme/img/attention.png"); }
+.red { background-color: rgb(255, 204, 204); }
+.solid { border: 2px solid rgb(0, 0, 0); padding: 2px; }
+table { margin: 0.5em 0px 0px 0.5em; border-collapse: collapse; }
+th, td { padding: 0.25em 0.5em; }
+td p { margin: 0px; padding: 0px; }
+.info { float: right; font-size: 0.7em; color: gray; }
+#pageinfo { margin-top: 2em; }
+#pagebottom { clear: both; }
+hr { height: 1pt; background-color: rgb(156, 156, 156); border: 0px none;=
+ }
+.advancedsearch optioni, select { border: 1px solid rgb(173, 185, 204); }
+#message .info::before { content: url("urn:not-loaded:http://wiki.ros.org/m=
+oin_static197/rostheme/img/icon-info.png"); margin: 0px 0.5em 0px 0.25em;=
+ vertical-align: middle; }
+#message .warning::before { content: url("http://wiki.ros.org/moin_static19=
+7/rostheme/img/alert.png"); margin: 0px 0.5em 0px 0.125em; vertical-align:=
+ middle; }
+#message .error::before { content: url("urn:not-loaded:http://wiki.ros.org/=
+moin_static197/rostheme/img/icon-error.png"); margin: 0px 0.5em 0px 0.125em=
+; vertical-align: middle; }
+#page { counter-reset: chapter; }
+#page h2::before { content: counter(chapter, decimal) ". "; counter-increme=
+nt: chapter; }
+#page h2 { counter-reset: section; }
+#page h3::before { content: counter(chapter, decimal) "." counter(section,=
+ decimal) " "; counter-increment: section; }
+#page h4::before { content: counter(chapter, decimal) "." counter(section,=
+ decimal) "." counter(subsection, decimal) " "; counter-increment: subsecti=
+on; }
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://wiki.ros.org/moin_static197/rostheme/img/moin-www.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUA/wC/v78AAP+0MGACAAAA
+AnRSTlP/AOW3MEoAAAABYktHRAJmC3xkAAAALUlEQVR42mMIZQgBwikMEUxLGLIUVjBkaS1gyGKA
+4CigWFjXFIbQVSEMoaEhAPFLC8/vqdQnAAAAAElFTkSuQmCC
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-607721C2:http://wiki.ros.org/moin_static197/rostheme/css/screen.css
+
+/* Effective stylesheet produced by snapshot save */
+body { margin: 0px; padding: 0px; border: 0px none; }
+#pageinfo { font-size: 10pt; }
+input { font-size: 1em; font-family: Arial,Lucida Grande,sans-serif; }
+#dpage { width: 1024px; margin-left: auto; margin-right: auto; }
+#page { padding: 4px; margin-left: 10px; width: 780px; }
+.footer { margin-left: 10px; font-size: 10pt; color: rgb(153, 153, 153); }
+#sidebar { display: inline; margin: 10px; float: right; clear: right; width=
+: 200px; padding: 0px; font-size: 0.88em; overflow: hidden; }
+.sidepanel { margin: 0px 0px 10px; float: right; width: 180px; }
+.sidepanel h1 { margin: 0px; padding: 0.2em 10px; text-align: center; borde=
+r-width: 1px medium 1pt; border-style: solid none; border-color: white -moz=
+-use-text-color rgb(191, 174, 143); -moz-border-top-colors: none; -moz-bord=
+er-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-co=
+lors: none; border-image: none; font-size: 1em; color: black; }
+.sidepanel ul { list-style-type: none; margin: 0px; padding: 0px; }
+.sidepanel li { margin: 0px; padding: 2px 10px; }
+.sidepanel li form { margin: 0px; }
+.sidepanel a { text-decoration: none; display: block; }
+.sidepanel a:hover { text-decoration: underline; }
+.actionsmenu select { width: 160px; }
+#interwiki span::after { content: ":"; }
+#locationline { clear: right; padding: 0px; }
+#header2 { margin-top: 20px; margin-bottom: 0px; }
+#pagelocation { display: inline; margin: 0px 0px 0px 10px; padding: 0px; fo=
+nt-size: 18pt; font-weight: bold; }
+#pagelocation a { text-decoration: none; }
+#pagetrail li, #pagelocation li { display: inline; margin: 0px; }
+#pagetrail li::after { content: " =C2=BB "; }
+[dir=3D"rtl"] #pagetrail li::after { content: " =C2=AB "; }
+#pagetrail li:last-child::after { content: ""; }
+#pagelocation li::after { content: "/ "; }
+[dir=3D"rtl"] #pagelocation li::after { content: " \\ "; }
+#pagelocation li:last-child::after { content: ""; }
+#navibar li.current { border: medium none; background: rgb(238, 238, 238)=
+ none repeat scroll 0% 0%; }
+.editbar form, .editbar form div { display: inline; margin: 0px; }
+#pagebottom { clear: both; }
+#topnav-table { border: 0px none; margin-left: auto; margin-right: auto; }
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-C528BA7B:http://wiki.ros.org/moin_static197/rostheme/css/print.css
+
+/* Effective stylesheet produced by snapshot save */
+html { font-family: Times,serif; font-size: 12pt; }
+body { margin: 1.5cm; }
+a, a:visited, a.nonexistent, a.badinterwiki { color: black; text-decoration=
+: none; }
+a:hover { text-decoration: underline; }
+.info a { color: gray; }
+a.interwiki::before, a.badinterwiki::before { content: attr(title) ":"; }
+#header, #sidebar, #footer, #timings, #credits, #interwiki, #pagelocation=
+ { display: none; }
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-F57EB58E:http://wiki.ros.org/moin_static197/rostheme/css/projection.css
+
+/* Effective stylesheet produced by snapshot save */
+@import url("urn:snapshot-7E0D6247:http://wiki.ros.org/moin_static197/rosth=
+eme/css/screen.css");
+html { line-height: 1.8em; }
+body, b, em, a, span, div, p, td { font-size: 22pt; }
+h1 { font-size: 28pt; }
+h2 { font-size: 24pt; }
+tt, pre { font-size: 18pt; }
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-7E0D6247:http://wiki.ros.org/moin_static197/rostheme/css/screen.css
+
+/* Effective stylesheet produced by snapshot save */
+body { margin: 0px; padding: 0px; border: 0px none; }
+#pageinfo { font-size: 10pt; }
+input { font-size: 1em; font-family: Arial,Lucida Grande,sans-serif; }
+#dpage { width: 1024px; margin-left: auto; margin-right: auto; }
+#page { padding: 4px; margin-left: 10px; width: 780px; }
+.footer { margin-left: 10px; font-size: 10pt; color: rgb(153, 153, 153); }
+#sidebar { display: inline; margin: 10px; float: right; clear: right; width=
+: 200px; padding: 0px; font-size: 0.88em; overflow: hidden; }
+.sidepanel { margin: 0px 0px 10px; float: right; width: 180px; }
+.sidepanel h1 { margin: 0px; padding: 0.2em 10px; text-align: center; borde=
+r-width: 1px medium 1pt; border-style: solid none; border-color: white -moz=
+-use-text-color rgb(191, 174, 143); -moz-border-top-colors: none; -moz-bord=
+er-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-co=
+lors: none; border-image: none; font-size: 1em; color: black; }
+.sidepanel ul { list-style-type: none; margin: 0px; padding: 0px; }
+.sidepanel li { margin: 0px; padding: 2px 10px; }
+.sidepanel li form { margin: 0px; }
+.sidepanel a { text-decoration: none; display: block; }
+.sidepanel a:hover { text-decoration: underline; }
+.actionsmenu select { width: 160px; }
+#interwiki span::after { content: ":"; }
+#locationline { clear: right; padding: 0px; }
+#header2 { margin-top: 20px; margin-bottom: 0px; }
+#pagelocation { display: inline; margin: 0px 0px 0px 10px; padding: 0px; fo=
+nt-size: 18pt; font-weight: bold; }
+#pagelocation a { text-decoration: none; }
+#pagetrail li, #pagelocation li { display: inline; margin: 0px; }
+#pagetrail li::after { content: " =C2=BB "; }
+[dir=3D"rtl"] #pagetrail li::after { content: " =C2=AB "; }
+#pagetrail li:last-child::after { content: ""; }
+#pagelocation li::after { content: "/ "; }
+[dir=3D"rtl"] #pagelocation li::after { content: " \\ "; }
+#pagelocation li:last-child::after { content: ""; }
+#navibar li.current { border: medium none; background: rgb(238, 238, 238)=
+ none repeat scroll 0% 0%; }
+.editbar form, .editbar form div { display: inline; margin: 0px; }
+#pagebottom { clear: both; }
+#topnav-table { border: 0px none; margin-left: auto; margin-right: auto; }
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-5FD33B19:http://www.google-analytics.com/ga.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-DB683CF5:http://code.jquery.com/jquery-1.11.0.min.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-1C34EEFD:http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-A993DE98:http://wiki.ros.org/custom/js/sorttable.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-B8A8934C:http://wiki.ros.org/custom/libraries/jquery.min.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-2CE33EFA:http://wiki.ros.org/custom/js/seesaw.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-66D8AD73:http://wiki.ros.org/custom/js/rosversion.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-D58A3B3F:http://wiki.ros.org/moin_static197/common/js/common.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_81622C8A.A32A4D99
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-7DB1D0C1:http://www.google-analytics.com/ga.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_81622C8A.A32A4D99--
