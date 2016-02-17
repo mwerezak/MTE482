@@ -1,0 +1,10 @@
+<launch>
+	<arg name="ns" default="razor"/>
+
+	<group ns="$(arg ns)">
+		<node pkg="razor_imu_9dof" type="imu_node.py" name="imu_node" output="screen">
+			<rosparam file="$(find carryitcart_localization)/config/razor_imu.yaml" command="load"/>
+			<param name="frame_id" type="string" value="razor_imu_link"/>
+		</node>
+	</group>
+</launch>
