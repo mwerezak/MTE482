@@ -1,0 +1,7 @@
+<launch>
+	<arg name="file" default="/home/mwerezak/Desktop/map"/>
+
+	<node name="map_saver" pkg="map_server" type="map_saver" output="screen" args="-f $(arg file)">
+		<remap from="map" to="/rtabmap/map_output"/>
+	</node>
+</launch>

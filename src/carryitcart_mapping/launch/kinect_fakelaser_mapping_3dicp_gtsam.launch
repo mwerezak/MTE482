@@ -3,8 +3,9 @@
 
 	<group ns="rtabmap">
 		<!-- SLAM -->
-		<node name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="screen" args="--delete_db_on_start">
+		<node name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="screen">
 			<!--<param name="config_path" type="string" value="$(find carryitcart_mapping)/config/icp3d_reextract_relaxed_no_local_lcc.ini"/>-->
+			<param name="database_path" type="string" value="/home/mwerezak/Projects/CarryItCart/test_files/mapping2.db"/>
 			<param name="frame_id" type="string" value="base_footprint"/>
 			<remap from="odom" to="/odom"/>
 
@@ -21,6 +22,9 @@
 
 			<param name="queue_size" type="int" value="100"/>
 
+			<!-- Output -->
+			<remap from="proj_map" to="map_output"/>
+
 			<!-- RTAB-Map's parameters -->
 			<param name="Rtabmap/DetectionRate" type="string" value="0.5"/>
 			<param name="Rtabmap/ImageBufferSize" type="string" value="0"/>
@@ -36,7 +40,7 @@
 			<param name="RGBD/OptimizeSlam2D" type="string" value="true"/>
 			<param name="RGBD/LocalLoopDetectionSpace" type="string" value="false"/>
 
-			<param name="LccBow/MinInliers" type="string" value="7"/>
+			<param name="LccBow/MinInliers" type="string" value="10"/>
 			<param name="LccBow/Iterations" type="string" value="1000"/>
 			<param name="LccBow/Force2D" type="string" value="true"/>
 			<param name="LccIcp/Type" type="string" value="1"/>
@@ -44,7 +48,7 @@
 			<param name="LccReextract/FeatureType" type="string" value="4"/>
 			<param name="LccReextract/MaxDepth" type="string" value="4.0"/>
 			<param name="LccReextract/NNType" type="string" value="3"/>
-			<param name="LccIcp3/CorrespondenceRatio" type="string" value="0.2"/>
+			<param name="LccIcp3/CorrespondenceRatio" type="string" value="0.3"/>
 			<param name="LccIcp3/Iterations" type="string" value="200"/>
 			<param name="LccIcp3/MaxDepth" type="string" value="3.0"/>
 			<param name="LccIcp3/PointToPlane" type="string" value="true"/>
