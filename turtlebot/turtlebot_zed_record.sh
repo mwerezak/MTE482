@@ -9,3 +9,7 @@ rosbag record -e \
 /camera/rgb/camera_info \
 /camera/rgb/image_rect_color/compressed.* \
 /cmd_vel_mux/input.* \
+/zed/camera/rgb/camera_info \
+/zed/camera/rgb/image_rect_color/compressed.* \
+/zed/camera/depth/camera_info \
+/zed/camera/depth_registered/image_raw/compressedDepth.*
