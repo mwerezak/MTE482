@@ -1,0 +1,7 @@
+<launch>
+	<arg name="topic" default="imu"/>
+
+	<node pkg="razor_imu_9dof" type="display_3D_visualization.py" name="display_3D_visualization_node" output="screen">
+		<remap from="imu" to="$(arg topic)"/>
+	</node>
+</launch>

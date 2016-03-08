@@ -1,10 +1,15 @@
 <launch>
 	<arg name="ns" default="razor"/>
+	<arg name="imu_frame" default="razor_link"/>
 
 	<group ns="$(arg ns)">
+		<node pkg="tf" type="static_transform_publisher" 
+			name="link_broadcaster" 
+			args="0 0 0 0 0 0 base_link $(arg imu_frame) 100" />
+
 		<node pkg="razor_imu_9dof" type="imu_node.py" name="imu_node" output="screen">
 			<rosparam file="$(find carryitcart_localization)/config/razor_imu.yaml" command="load"/>
-			<param name="frame_id" type="string" value="razor_imu_link"/>
+			<param name="frame_id" type="string" value="$(arg imu_frame)"/>
 		</node>
 	</group>
 </launch>
