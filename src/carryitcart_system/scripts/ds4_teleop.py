@@ -76,16 +76,33 @@ def handle_controller_input(controller_input):
 	_input_state = (fwd_input*_lin_scale, turn_input*_ang_scale, braking_input)
 
 
+def publish_control(publisher, control_state):
+	linear_speed, angular_speed = control_state
+
+	twist = Twist()
+	twist.linear.x, twist.linear.y, twist.linear.z = (linear_speed, 0, 0)
+	twist.angular.x, twist.angular.y, twist.angular.z = (0, 0, angular_speed)
+	twist_pub.publish(twist)
+
 if __name__ == '__main__':
 	rospy.init_node('ds4_teleop')
 	
 	rospy.Subscriber("joy", sensor_msgs.Joy, handle_controller_input)
+	twist_pub = rospy.Publisher('~cmd_vel', geometry_msgs.Twist, queue_size=5)
 
-	update_rate = 10 #10 Hz
+	update_rate = 10 #Hz
 	loop_rate = rospy.Rate(update_rate) 
-	while not rospy.is_shutdown():
-		loop_rate.sleep()
 
-		_control_state = get_next_control_state(_control_state, _input_state)
+	try:
+		while not rospy.is_shutdown():
+			loop_rate.sleep()
 
-		print(_control_state, (_lin_scale, _ang_scale))
+			_control_state = get_next_control_state(_control_state, _input_state)
+
+			publish_control(twist_pub, _control_state)
+	except e:
+		print e
+	finally:
+		#if something goes wrong, try to make sure the turtlebot comes to a halt
+		publish_control(twist_pub, (0, 0))
+
