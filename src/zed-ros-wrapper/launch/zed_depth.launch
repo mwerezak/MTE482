@@ -1,11 +1,14 @@
 <launch>
 
-  <include file="$(find zed_wrapper)/launch/zed_tf.launch" />
-
   <arg name="computeDepth" value="1"/>
   <arg name="svo_file" default=""/>
   
   <group ns="/zed/camera">
+
+    <include file="$(find zed_wrapper)/launch/zed_tf.launch">
+      <arg name="tf_prefix" value="zed"/>
+    </include>
+
     <node name="zed_wrapper_node" pkg="zed_wrapper" type="zed_wrapper_node" args="$(arg computeDepth) $(arg svo_file)" output="screen">
 
       <param name="resolution"            value="2" />
@@ -17,8 +20,8 @@
       <param name="second_topic"          value="depth_registered/image_raw" />
       <param name="left_cam_info_topic"   value="rgb/camera_info" />
       <param name="second_cam_info_topic" value="depth/camera_info" />
-      <param name="left_frame_id"         value="/zed_optical_frame" />
-      <param name="second_frame_id"       value="/zed_optical_frame" />
+      <param name="left_frame_id"         value="zed/zed_optical_frame" />
+      <param name="second_frame_id"       value="zed/zed_optical_frame" />
 
     </node>
   </group>
