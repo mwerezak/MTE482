@@ -7,7 +7,7 @@
 		</node>
 
 		<node pkg="carryitcart_system" type="ds4_teleop.py" name="ds4_teleop" output="screen">
-			<remap from="cmd_vel" to="/cmd_vel_mux/input/navi"/>
+			<remap from="cmd_vel" to="/cmd_vel_mux/input/teleop"/>
 		</node>
 	</group>
 </launch>
